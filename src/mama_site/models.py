@@ -124,6 +124,7 @@ class InfoItem:
     emoji: str
     group: str  # 护具 | 配件
     photo: str = ""
+    why: str = ""  # prose "为什么重要" intro, rendered above the notes on the item page
     when_to_use: list[str] = field(default_factory=list)
     notes: list[str] = field(default_factory=list)
     how_to_choose: str = ""

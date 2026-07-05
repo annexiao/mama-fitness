@@ -7,6 +7,10 @@
   <div><div class="nm">{{ item.name }}</div><div class="ds">{{ item.group }}</div></div>
 </div>
 
+{% if item.why %}
+<div class="whyblock">{{ item.why }}</div>
+{% endif %}
+
 {% if item.when_to_use %}
 <div class="section-label">什么时候用</div>
 <ul class="infolist">{% for w in item.when_to_use %}<li>{{ w }}</li>{% endfor %}</ul>
