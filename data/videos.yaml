@@ -1,0 +1,271 @@
+# 现成的跟练视频。加视频只需在这里加一条。
+# platform: bilibili | youtube    vid: BV号 或 youtube 视频 id
+# minutes 让首页按"练多久"随机推荐；tags 用于 /videos 页的关键词筛选。
+videos:
+  - id: pilates-ball-32min
+    title: 32 分钟普拉提（mini 球全身跟练）
+    platform: bilibili
+    vid: BV1XE421G7UQ
+    minutes: 32
+    tags: [普拉提, 小球, 全身, 跟练]
+    tool: pilates-ball        # 关联器械（在该器械页显示）；留空则只在首页/视频页
+    body_part: 全身
+    note: 全身塑形、动作不重复，需要一个 mini 球（就是我们的普拉提小球）
+
+  - id: pelvis-reset-21min
+    title: MIZI 20分钟骨盆调整训练，缓解经期疼痛与髋部不适
+    platform: bilibili
+    vid: BV1UDG3zcEQC
+    minutes: 21
+    tags: [臀腿, 拉伸, 放松]
+    body_part: 臀腿
+
+  - id: lower-body-mobility-19min
+    title: MIZI 19分钟下半身灵活度训练，改善髋部僵硬、腿后紧绷、脚踝受限
+    platform: bilibili
+    vid: BV1oMSCB6ETY
+    minutes: 19
+    tags: [腿, 拉伸, 放松]
+    body_part: 腿
+
+  - id: hip-stretch-15min
+    title: 【Marie Steffen】15分钟髋部伸展运动，增加髋关节活动度，消除下背部紧绷感
+    platform: bilibili
+    vid: BV15NYveAEqa
+    minutes: 15
+    tags: [臀腿, 拉伸, 腰]
+    body_part: 臀腿
+
+  - id: dumbbell-upper-body-20min
+    title: MIZI 20分钟哑铃训练，打造紧致上半身，锻炼背部、手臂、肩膀和核心
+    platform: bilibili
+    vid: BV1UQ8FzkE2Z
+    minutes: 20
+    tags: [胸背, 力量, 肩颈]
+    body_part: 胸背
+
+  - id: dumbbell-upper-body-15min
+    title: MIZI 15分钟哑铃上半身锻炼，塑形并强化手臂、肩膀、胸部和背部
+    platform: bilibili
+    vid: BV1jhe3zhET3
+    minutes: 17
+    tags: [胸背, 力量, 肩颈]
+    body_part: 胸背
+
+  - id: resistance-band-shoulder-back-10min
+    title: 弹力带10分钟肩背力量轻线条训练
+    platform: bilibili
+    vid: BV1eT1sY5E3u
+    minutes: 12
+    tags: [肩颈, 力量, 弹力带]
+    body_part: 肩颈
+
+  - id: buffalo-hump-fix-13min
+    title: 8招消除富贵包，改善圆肩驼背，缓解肩颈酸痛（跟练版）
+    platform: bilibili
+    vid: BV1CV411a7FQ
+    minutes: 13
+    tags: [肩颈, 拉伸, 跟练]
+    body_part: 肩颈
+    note: 该视频分两段，这里用的是不带讲解的跟练纯享版（约13分钟）
+
+  - id: slim-shoulder-back-15min
+    title: MIZI 15分钟瘦肩背，改善圆肩驼背
+    platform: bilibili
+    vid: BV1LTwJzTE9M
+    minutes: 16
+    tags: [肩颈, 拉伸, 胸背]
+    body_part: 肩颈
+
+  - id: bra-fat-upper-body-16min
+    title: 甩掉背部bra赘肉，一个月打造纤细上半身
+    platform: youtube
+    vid: yimeburgZX8
+    minutes: 16
+    tags: [胸背, 有氧, 力量]
+    body_part: 胸背
+
+  - id: upper-body-mobility-16min
+    title: 15分钟上肢活动度训练（胸椎、肩部、手腕）
+    platform: youtube
+    vid: 41RvmL4Majc
+    minutes: 16
+    tags: [肩颈, 拉伸, 热身]
+    body_part: 肩颈
+
+  - id: full-body-mobility-26min
+    title: 【Marie Steffen】25分钟全身灵活性训练，无器械
+    platform: bilibili
+    vid: BV1M4YzeeECz
+    minutes: 26
+    tags: [全身, 拉伸, 无器械]
+    body_part: 全身
+
+  - id: full-body-mobility-live-52min
+    title: 【Marie Steffen】20分钟全身灵活性伸展训练（直播加问答，共52分钟）
+    platform: bilibili
+    vid: BV1mMYKeqE42
+    minutes: 52
+    tags: [全身, 拉伸, 跟练]
+    body_part: 全身
+    note: 直播回放，含20分钟拉伸加约30分钟营养与训练问答，实际时长52分钟
+
+  - id: long-lasting-mobility-26min
+    title: 【Marie Steffen】25分钟长效灵活性训练，髋部、肩部与脊柱
+    platform: bilibili
+    vid: BV16zqkBjEi6
+    minutes: 26
+    tags: [全身, 拉伸, 腰]
+    body_part: 全身
+
+  - id: full-body-pilates-33min
+    title: 【Marie Steffen】30分钟全身灵活性和力量普拉提训练
+    platform: bilibili
+    vid: BV1rp1rYMEDk
+    minutes: 33
+    tags: [全身, 普拉提, 力量]
+    body_part: 全身
+
+  - id: pilates-ball-core-15min
+    title: 普拉提小球核心训练，深层核心增强私教课
+    platform: bilibili
+    vid: BV1Sb42177DV
+    minutes: 15
+    tags: [核心, 普拉提, 小球]
+    body_part: 核心
+
+  - id: upper-body-reset-13min
+    title: 10分钟上肢重启训练，缓解颈肩背部疼痛
+    platform: youtube
+    vid: lnsEnVuSva8
+    minutes: 13
+    tags: [肩颈, 拉伸, 放松]
+    body_part: 肩颈
+
+  - id: glute-band-lying-6min
+    title: 6分钟弹力带臀部训练，全程躺练（新手友好、不伤膝）
+    platform: bilibili
+    vid: BV1JY411g7jm
+    minutes: 6
+    tags: [臀腿, 弹力带, 跟练]
+    body_part: 臀腿
+    note: 全程躺着练，没有深蹲、不伤膝盖，适合刚开始练
+
+  - id: resistance-band-back-teach-2min
+    title: 超详细！居家弹力带练背教学，改善圆肩驼背
+    platform: bilibili
+    vid: BV1AF41137o9
+    minutes: 2
+    tags: [胸背, 弹力带, 力量]
+    tool: resistance-band
+    body_part: 胸背
+    note: 讲解很细的教学，先看懂动作再练；适合改善圆肩驼背
+
+  - id: resistance-band-chest-teach-2min
+    title: 保姆级！居家弹力带练胸教学，打造好看的胸型
+    platform: bilibili
+    vid: BV1GR4y1c7Ws
+    minutes: 2
+    tags: [胸背, 弹力带, 力量]
+    tool: resistance-band
+    body_part: 胸背
+    note: 一步步讲解的教学版，动作分解清楚
+
+  - id: resistance-band-chest-follow-4min
+    title: 4分钟弹力带练胸跟练，居家必备
+    platform: bilibili
+    vid: BV1S3411p7M2
+    minutes: 4
+    tags: [胸背, 弹力带, 跟练]
+    tool: resistance-band
+    body_part: 胸背
+    note: 短短4分钟的跟练版，学会动作后可以直接跟着做
+
+  - id: resistance-band-full-body-54min
+    title: 50分钟全身弹力带训练，力量、塑形与燃脂
+    platform: bilibili
+    vid: BV1pZ4y1P7b2
+    minutes: 54
+    tags: [全身, 弹力带, 有氧]
+    tool: resistance-band
+    body_part: 全身
+    note: 时间较长、强度偏高（含 HIIT 收尾），适合有精力时挑战；累了随时可以停
+
+  - id: loop-band-standing-glute-16min
+    title: 15分钟弹力圈训练，全程站立、美腿翘臀（4K 高清）
+    platform: bilibili
+    vid: BV1qhvaevEXg
+    minutes: 16
+    tags: [臀腿, 弹力圈, 跟练]
+    tool: loop-band
+    body_part: 臀腿
+    note: 全程站着练，不用趴下或躺下，膝盖友好
+
+  - id: resistance-band-core-15min
+    title: 15分钟弹力带核心力量训练，减肚子、瘦大腿、提臀线
+    platform: bilibili
+    vid: BV1tV411R7SG
+    minutes: 16
+    tags: [核心, 弹力带, 力量]
+    tool: resistance-band
+    body_part: 核心
+    note: 练核心为主，同时带到大腿和臀线
+
+  - id: pilates-ball-full-33min
+    title: 30分钟普拉提小球中级全身训练（Move With Nicole）
+    platform: youtube
+    vid: Msq66X1VUAQ
+    minutes: 33
+    tags: [普拉提, 小球, 全身]
+    tool: pilates-ball
+    body_part: 全身
+    note: 英文讲解的跟练视频，动作跟着做就行，从头开始练
+
+  - id: pilates-ball-glute-bridge-10min
+    title: 10分钟普拉提小球臀桥训练（居家）
+    platform: youtube
+    vid: VhMjT8CD8w0
+    minutes: 9
+    tags: [普拉提, 小球, 臀腿]
+    tool: pilates-ball
+    body_part: 臀腿
+    note: 英文跟练，专门练臀桥，需要一个普拉提小球
+
+  - id: foam-roller-shoulder-back-9min
+    title: 9分钟泡沫轴放松肩背，缓解后背僵硬、改善圆肩驼背
+    platform: bilibili
+    vid: BV1HP411H7t8
+    minutes: 9
+    tags: [肩颈, 放松, 泡沫轴]
+    body_part: 肩颈
+    note: 跟练版，用泡沫轴放松肩背，适合练完或久坐后用
+
+  - id: kettlebell-fullbody-15min
+    title: 壶铃居家全身爆汗训练（一套练完出汗）
+    platform: bilibili
+    vid: BV1vt421M7CS
+    minutes: 15
+    tags: [全身, 壶铃, 有氧]
+    tool: kettlebell
+    body_part: 全身
+    note: 强度偏高、会出不少汗，壶铃重量按自己能接受的来；累了随时可以停
+
+  - id: resistance-band-upper-18min
+    title: 18分钟弹力带上身训练，练背、胸和手臂（居家）
+    platform: bilibili
+    vid: BV1yj411A7ey
+    minutes: 18
+    tags: [胸背, 弹力带, 跟练]
+    tool: resistance-band
+    body_part: 胸背
+    note: 用弹力带练上半身，背、胸、手臂都带到
+
+  - id: pamela-band-upper-11min
+    title: 帕梅拉 10分钟上肢塑形，改善圆肩驼背、雕刻肩背线条（弹力带）
+    platform: bilibili
+    vid: BV1WN411H7MA
+    minutes: 11
+    tags: [胸背, 弹力带, 跟练]
+    tool: resistance-band
+    body_part: 胸背
+    note: 帕梅拉的弹力带上肢跟练，练肩、背和手臂线条

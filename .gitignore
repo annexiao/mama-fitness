@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.python-version
+.venv/
+venv/
+
+# Jupyter / marimo
+.ipynb_checkpoints/
+
+# OS / Editor
+.DS_Store
+.vscode/
+.idea/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Secrets — keep .env.example tracked, .env local only
+.env
+
+# Local todo files
+TODO.md
+
+# NOTE: data/ holds the site's CONTENT (YAML), which is source and IS tracked.
+# (The scaffold's blanket data/* ignore was removed on 2026-07-04.)
+
+# Build output
+dist/
+
+# Playwright scratch — login / captcha / account screenshots, never commit
+.playwright-mcp/
+/captcha.png
+/p10.png
+/taobao-login.png
+
+# Wrangler local cache
+.wrangler/
+
+# Exercise hero GIFs — self-hosted from gray/paid sources; kept OUT of the public
+# repo so open-sourcing stays clean (they're on disk + deployed, just not tracked).
+# The open-source version falls back to the placeholder cover.
+static/gif/
+
+# private family photos (deploy from disk, not committed)
+static/photos/
+
+# --- open-source hygiene (never commit these) ---
+.op-env               # 1Password references — keep local only
+mockups/              # dev screenshots (may contain personal photos)
+.playwright-mcp/      # Playwright dev snapshots
+instincts/            # local AI collaboration notes
+static/img/           # equipment photos — provide your own (falls back to emoji)

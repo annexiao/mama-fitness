@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}{{ tool.name }} · {{ site.meta.brand }}{% endblock %}
+{% block body %}
+<a class="crumb" href="/tools/">‹ 器械总览</a>
+<div class="eqhead">
+  <div class="big"><img src="/static/img/{{ tool.id }}.jpg" alt="" onerror="this.parentElement.textContent='{{ tool.emoji }}'"></div>
+  <div><div class="nm">{{ tool.name }}</div><div class="ds">{{ tool.function }}</div></div>
+</div>
+<div class="freq">建议 {{ tool.frequency }}</div>
+{% if tool.note %}<div class="note">{{ tool.note }}</div>{% endif %}
+
+<div class="section-label">🎬 能做的动作（点开看详解）</div>
+{% for label, items in level_groups %}
+  {% if label %}<div class="level-label">{{ label }}</div>{% endif %}
+  <div class="grid">
+    {% for ex in items %}
+    <a class="gcard" href="/tools/{{ tool.id }}/{{ ex.id }}/">
+      <div class="cover">
+        {% if ex.gif %}<img src="{{ ex.gif }}" alt="{{ ex.name }}">
+        {% else %}<span class="gbadge">🎞 GIF</span>动图封面{% endif %}
+      </div>
+      <div class="gbody">
+        <div class="gn">{{ ex.name }}</div>
+        <div class="gt"><span class="mtag">{{ ex.target }}</span></div>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+{% endfor %}
+
+{% if tool_videos %}
+<a class="video-view-link" href="/videos/?tool={{ tool.id }}">🎬 看 {{ tool.name }} 的跟练视频（{{ tool_videos | length }} 个）→</a>
+{% endif %}
+{% endblock %}

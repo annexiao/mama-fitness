@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}为什么练 · {{ site.meta.brand }}{% endblock %}
+{% block body %}
+<div class="letterpaper">
+  <div class="eyebrow">给妈妈 · 一份小心意 ❤️</div>
+  <div class="letter">{{ site.meta.letter }}</div>
+  <div class="letter-sign">永远爱你的女儿</div>
+  <svg class="letter-pen" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <g transform="rotate(45 60 60)">
+      <rect x="52" y="8" width="16" height="60" rx="4" fill="#C56A45"/>
+      <rect x="52" y="8" width="16" height="16" rx="4" fill="#A8542F"/>
+      <rect x="55" y="26" width="10" height="3" rx="1.5" fill="#8a4a2c" opacity=".6"/>
+      <path d="M52 68 L68 68 L64 92 L60 100 L56 92 Z" fill="#EBD9B6"/>
+      <path d="M60 78 L60 100" stroke="#8a6a3a" stroke-width="2"/>
+      <path d="M56 92 L64 92" stroke="#8a6a3a" stroke-width="1.5"/>
+    </g>
+  </svg>
+</div>
+
+<div class="famstrip" data-count="3" data-photos='{{ photos | tojson }}'></div>
+
+<div class="why-card">
+  <h3>练这些，是为了这些</h3>
+  <ul>
+    {% for b in site.meta.benefits %}
+    <li><span class="ic{% if b.img %} has-img{% endif %}">{% if b.img %}<img src="{{ b.img }}" alt="">{% else %}✿{% endif %}</span>{{ b.text }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

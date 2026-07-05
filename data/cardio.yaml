@@ -1,0 +1,17 @@
+# 有氧器械（按时长和强度，不是组数 x 次数）
+cardio:
+  - id: elliptical
+    name: 椭圆机
+    emoji: 🚴
+    function: 练心肺、活动全身，对膝盖很友好的有氧运动
+    how_to_use:
+      - 双脚踩稳踏板，双手扶住把手
+      - 身体站直，不要全靠手臂撑
+      - 像走路一样自然地蹬，先慢后快
+    duration: 每次 15 到 30 分钟，一周 3 到 4 次
+    intensity: 微微出汗、能说话但不能唱歌，就是刚刚好的强度
+    knee_note: 椭圆机双脚不离踏板，对膝盖冲击很小，比跑步更适合你。如果膝盖有不适，把阻力调低、幅度放小。
+    self_check:
+      - {where: 心跳和呼吸, symptom: 加快但还能说话, verdict: ok}
+      - {where: 膝盖, symptom: 疼痛, verdict: stop}
+      - {where: 胸口, symptom: 闷或痛, verdict: stop}

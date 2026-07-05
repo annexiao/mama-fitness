@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block title %}跟练视频 · {{ site.meta.brand }}{% endblock %}
+{% block body %}
+<div class="h2">跟练视频</div>
+<div class="h2-sub">跟着视频从头练到尾。想看单个动作怎么做，去对应的器械页面看「讲解视频」。下面可以按关键词筛，也可以搜标题。</div>
+
+<div class="vtoolbanner" id="vtoolbanner" hidden>
+  只看 <b id="vtoolname"></b> 的视频
+  <a href="/videos/" id="vtoolclear">看全部 ✕</a>
+</div>
+
+<input class="vsearch" id="vsearch" type="search" placeholder="🔍 搜标题，比如「普拉提」「拉伸」" aria-label="搜标题">
+
+<div class="vtags" id="vtags">
+  <span class="pill on" data-tag="all">全部</span>
+  {% for t in all_tags %}<span class="pill" data-tag="{{ t }}">{{ t }}</span>{% endfor %}
+</div>
+
+<div class="vcount" id="vcount"></div>
+
+<div class="vlist" id="vlist">
+  {% for v in site.videos %}
+  <div class="vitem" data-title="{{ v.title }}" data-tags="{{ v.tags | join(' ') }}" data-tool="{{ v.tool }}">
+    <div class="bili"><iframe src="{{ v.embed }}" scrolling="no" frameborder="0" allowfullscreen="true" loading="lazy"></iframe></div>
+    <div class="vmeta2">
+      <div class="vt2">{{ v.title }}</div>
+      <div class="vtagrow">
+        {% for t in v.tags %}<span class="vtag">{{ t }}</span>{% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<div class="vempty" id="vempty" hidden>没有找到匹配的视频，换个关键词试试。</div>
+
+<script>
+(function(){
+  var TOOL_NAMES={{ tool_names | tojson }};
+  var list=document.getElementById('vlist'), items=[].slice.call(list.querySelectorAll('.vitem'));
+  var search=document.getElementById('vsearch'), tagbox=document.getElementById('vtags');
+  var count=document.getElementById('vcount'), empty=document.getElementById('vempty');
+  var banner=document.getElementById('vtoolbanner'), toolname=document.getElementById('vtoolname');
+  var activeTag='all';
+  // ?tool=<id> pre-filters to one piece of equipment (linked from each 器械 page)
+  var params=new URLSearchParams(location.search), activeTool=params.get('tool')||'';
+  if(activeTool && TOOL_NAMES[activeTool]){
+    toolname.textContent=TOOL_NAMES[activeTool]; banner.hidden=false;
+  } else { activeTool=''; }
+  function apply(){
+    var q=(search.value||'').trim().toLowerCase(), n=0;
+    items.forEach(function(it){
+      var okTool = !activeTool || it.dataset.tool===activeTool;
+      var okTag = activeTag==='all' || (' '+it.dataset.tags+' ').indexOf(' '+activeTag+' ')>=0;
+      var okQ = !q || it.dataset.title.toLowerCase().indexOf(q)>=0;
+      var show = okTool && okTag && okQ; it.hidden=!show; if(show)n++;
+    });
+    count.textContent = n + ' 个视频';
+    empty.hidden = n>0;
+  }
+  search.addEventListener('input', apply);
+  tagbox.addEventListener('click', function(e){
+    var p=e.target.closest('.pill'); if(!p)return;
+    tagbox.querySelectorAll('.pill').forEach(function(x){x.classList.remove('on')});
+    p.classList.add('on'); activeTag=p.dataset.tag; apply();
+  });
+  apply();
+})();
+</script>
+{% endblock %}

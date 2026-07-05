@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}基础知识 · {{ site.meta.brand }}{% endblock %}
+{% block body %}
+<div class="h2">基础知识</div>
+<div class="h2-sub">明白了原理，你自己就能判断，不用死记计划。</div>
+
+<nav class="toc" aria-label="目录">
+  {% for g in site.knowledge.groups %}
+  <a href="#k-{{ g.key }}">{{ g.icon }} {{ g.label }}</a>
+  {% endfor %}
+</nav>
+
+{% for g in site.knowledge.groups %}
+<div class="kgroup" id="k-{{ g.key }}">
+  <div class="section-label">{{ g.icon }} {{ g.label }}</div>
+  {% for a in g.articles %}
+  <div class="karticle" id="a-{{ a.id }}"><h4>{{ a.title }}</h4><p>{{ a.body }}</p></div>
+  {% endfor %}
+</div>
+{% endfor %}
+
+<a href="#" class="to-top" id="toTop">↑ 回到页首</a>
+<script>
+  (function(){
+    var t=document.getElementById('toTop');
+    function upd(){ t.classList.toggle('show', window.scrollY>320); }
+    window.addEventListener('scroll', upd, {passive:true}); upd();
+    t.addEventListener('click', function(e){ e.preventDefault(); window.scrollTo({top:0,behavior:'smooth'}); });
+  })();
+</script>
+{% endblock %}

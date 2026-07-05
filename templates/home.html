@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block title %}今天练什么 · {{ site.meta.brand }}{% endblock %}
+{% block body %}
+<div class="warm">
+  <div class="wt">{{ site.meta.warm_strip }}</div>
+  <a class="warm-arrow" href="/why/">→</a>
+</div>
+
+<div class="famstrip" data-count="3" data-photos='{{ photos | tojson }}'></div>
+
+<div class="h2">今天练什么？</div>
+
+<div class="pickrow" data-group="bodyPart">
+  <div class="pl">练哪里</div>
+  <div class="pills">
+    <span class="pill" data-value="臀腿">臀腿</span>
+    <span class="pill" data-value="核心腰">核心 / 腰</span>
+    <span class="pill" data-value="胸背">胸背</span>
+    <span class="pill" data-value="肩颈">肩颈</span>
+    <span class="pill" data-value="手臂">手臂</span>
+    <span class="pill on" data-value="all">全身</span>
+  </div>
+</div>
+
+<div class="pickrow" data-group="aspects">
+  <div class="pl">练哪个方面</div>
+  <div class="pills">
+    <span class="pill" data-value="力量">力量</span>
+    <span class="pill" data-value="柔韧性">柔韧性</span>
+    <span class="pill" data-value="稳定性">稳定性</span>
+    <span class="pill on" data-value="all">都可以</span>
+  </div>
+</div>
+
+<div class="pickrow" data-group="intensity">
+  <div class="pl">强度</div>
+  <div class="pills">
+    <span class="pill" data-value="轻松">轻松</span>
+    <span class="pill on" data-value="中等">中等</span>
+    <span class="pill" data-value="加把劲">加把劲</span>
+  </div>
+</div>
+
+<div class="pickrow">
+  <div class="pl">练多久</div>
+  <div class="vs-wrap" id="durationSlider">
+    <div class="vs-track">
+      <div class="vs-fill"></div>
+      <div class="vs-handle" role="slider" tabindex="0" aria-label="练多久（分钟）"
+           aria-valuemin="10" aria-valuemax="45"></div>
+    </div>
+    <div class="vs-value"></div>
+  </div>
+</div>
+
+<button class="gen shine" id="gen">给我配一套 →</button>
+
+<div id="plan"></div>
+
+<div id="videoSuggest"></div>
+
+<script type="module" src="/static/composer.js"></script>
+{% endblock %}

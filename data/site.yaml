@@ -1,0 +1,27 @@
+brand: 妈妈的训练
+
+# 首页顶部那句温暖的话（生成器上方）
+warm_strip: 妈妈，我们一起把身体照顾好，好不好 ❤️
+
+# /why 页那封完整的信
+letter: |
+  妈妈，我爱你。
+
+  我希望你能年轻很多很多年，
+  还能陪我去很多很多地方。
+
+  所以让我们一起，把身体照顾好。
+
+  我不能总在你身边，
+  但只要打开这里，你就能自己一步一步来，
+  知道每样器械怎么用、每个动作练到哪里、什么时候该停。
+
+# img 由小漫画 subagent 填入（static/why/*.png）；缺省时前端回退到花朵图标
+benefits:
+  - {text: 爬坡更轻松, img: /static/why/climb.png}
+  - {text: 膝盖更舒服, img: /static/why/knee.png}
+  - {text: 不容易摔倒, img: /static/why/steady.png}
+  - {text: 腰更有力气, img: /static/why/back.png}
+  - {text: 身板挺得直, img: /static/why/posture.png}
+  - {text: 年纪再大，也还能去环游世界, img: /static/why/travel.png}
+  - {text: 还能帮爸爸一起练得更合适, img: /static/why/together.png}

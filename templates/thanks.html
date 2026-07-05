@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}致谢 · {{ site.meta.brand }}{% endblock %}
+{% block body %}
+<div class="h2">致谢</div>
+<div class="h2-sub">这个小站能做成，站在很多人的肩膀上。谢谢下面这些免费、开源的项目和分享。</div>
+
+<div class="prose">
+  <h3>用到的东西</h3>
+  <ul class="stack-list">
+    <li><b>网页</b>：Python + Jinja2 生成的静态网站</li>
+    <li><b>托管</b>：Cloudflare</li>
+    <li><b>跟练和演示视频</b>：来自 Bilibili 和 YouTube 上老师们分享的公开教学视频</li>
+    <li><b>好处清单里的小插画</b>：豆包 Seedream（火山引擎）生成</li>
+    <li><b>动作页的人体肌肉图</b>：<a href="https://github.com/HichamELBSI/react-native-body-highlighter" target="_blank" rel="noopener">react-native-body-highlighter</a>（MIT 开源许可）</li>
+    <li><b>手写信字体</b>：<a href="https://github.com/googlefonts/zcool-kuaile" target="_blank" rel="noopener">站酷快乐体 ZCOOL KuaiLe</a>（SIL OFL 开源字体许可）</li>
+  </ul>
+
+  <h3>特别感谢</h3>
+  <ul class="stack-list">
+    <li>在 Bilibili 和 YouTube 上认真做教学、把知识免费分享出来的每一位老师</li>
+  </ul>
+
+  <p>这是一个非商业的家庭小站，用到的资源都尽量注明来源、心怀感谢。如果有任何来源需要更正或补充，欢迎告诉我们。</p>
+</div>
+{% endblock %}

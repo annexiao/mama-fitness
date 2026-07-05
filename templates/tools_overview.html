@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}器械与装备 · {{ site.meta.brand }}{% endblock %}
+{% block body %}
+<div class="h2">你的器械和装备</div>
+<div class="h2-sub">点开任意一个，看看它是干什么用的、怎么用。</div>
+
+<div class="section-label">🏋️ 用来练的</div>
+{% for t in site.tools %}
+<a class="card" href="/tools/{{ t.id }}/">
+  <div class="thumb"><img src="/static/img/{{ t.id }}.jpg" alt="" onerror="this.parentElement.textContent='{{ t.emoji }}'"></div>
+  <div><div class="nm">{{ t.name }}</div><div class="ds">{{ t.function }}</div></div>
+  <div class="arrow">›</div>
+</a>
+{% endfor %}
+
+{% if site.cardio %}
+<div class="section-label">🚴 有氧</div>
+{% for c in site.cardio %}
+<a class="card" href="/tools/{{ c.id }}/">
+  <div class="thumb"><img src="/static/img/{{ c.id }}.jpg" alt="" onerror="this.parentElement.textContent='{{ c.emoji }}'"></div>
+  <div><div class="nm">{{ c.name }}</div><div class="ds">{{ c.function }}</div></div>
+  <div class="arrow">›</div>
+</a>
+{% endfor %}
+{% endif %}
+
+{% if site.gear %}
+<div class="section-label">🦵 帮你保护的</div>
+{% for g in site.gear %}
+<a class="card" href="/tools/{{ g.id }}/">
+  <div class="thumb"><img src="/static/img/{{ g.id }}.jpg" alt="" onerror="this.parentElement.textContent='{{ g.emoji }}'"></div>
+  <div><div class="nm">{{ g.name }}</div><div class="ds">{{ g.when_to_use[0] if g.when_to_use else g.caution }}</div></div>
+  <div class="arrow">›</div>
+</a>
+{% endfor %}
+{% endif %}
+
+{% if site.accessories %}
+<div class="section-label">🧩 配件</div>
+{% for a in site.accessories %}
+<a class="card" href="/tools/{{ a.id }}/">
+  <div class="thumb"><img src="/static/img/{{ a.id }}.jpg" alt="" onerror="this.parentElement.textContent='{{ a.emoji }}'"></div>
+  <div><div class="nm">{{ a.name }}</div><div class="ds">{{ a.notes[0] if a.notes else '' }}</div></div>
+  <div class="arrow">›</div>
+</a>
+{% endfor %}
+{% endif %}
+{% endblock %}

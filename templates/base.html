@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ site.meta.brand }}{% endblock %}</title>
+<meta name="description" content="{{ site.meta.brand }}：给妈妈的运动器械使用指南。">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-in">
+    <a class="brand" href="/"><span class="hh">❤</span>{{ site.meta.brand }}</a>
+    <a class="lnk {% if nav_active=='home' %}on{% endif %}" href="/">好好练习，天天向上</a>
+    <a class="lnk {% if nav_active=='tools' %}on{% endif %}" href="/tools/">器械</a>
+    <a class="lnk {% if nav_active=='videos' %}on{% endif %}" href="/videos/">跟练视频</a>
+    <a class="lnk {% if nav_active=='learn' %}on{% endif %}" href="/learn/">知识</a>
+  </div>
+</nav>
+<main class="wrap">
+{% block body %}{% endblock %}
+</main>
+<footer>
+  <div class="foot-in">
+    <a href="/about/">关于与说明</a>
+    <a href="/thanks/">致谢</a>
+  </div>
+</footer>
+<script src="/static/famphotos.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}{{ item.name }} · {{ site.meta.brand }}{% endblock %}
+{% block body %}
+<a class="crumb" href="/tools/">‹ 器械总览</a>
+<div class="eqhead">
+  <div class="big"><img src="/static/img/{{ item.id }}.jpg" alt="" onerror="this.parentElement.textContent='{{ item.emoji }}'"></div>
+  <div><div class="nm">{{ item.name }}</div><div class="ds">{{ item.group }}</div></div>
+</div>
+
+{% if item.when_to_use %}
+<div class="section-label">什么时候用</div>
+<ul class="infolist">{% for w in item.when_to_use %}<li>{{ w }}</li>{% endfor %}</ul>
+{% endif %}
+
+{% if item.notes %}
+<div class="section-label">要知道的</div>
+<ul class="infolist">{% for n in item.notes %}<li>{{ n }}</li>{% endfor %}</ul>
+{% endif %}
+
+{% if item.how_to_choose %}
+<div class="blk"><div class="lab">怎么选 / 怎么用</div><div class="val">{{ item.how_to_choose }}</div></div>
+{% endif %}
+
+{% if item.caution %}
+<div class="caution">⚠️ <b>注意</b>：{{ item.caution }}</div>
+{% endif %}
+
+{% if item.video_embeds %}
+<div class="section-label" style="margin-top:6px">🎬 讲解视频</div>
+{% for emb in item.video_embeds %}
+<div class="vcard"><div class="bili">
+  <iframe src="{{ emb }}" scrolling="no" frameborder="0" allowfullscreen="true" loading="lazy"></iframe>
+</div></div>
+{% endfor %}
+{% endif %}
+{% endblock %}

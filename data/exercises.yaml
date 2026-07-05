@@ -1,0 +1,619 @@
+# 起手动作（起始版本，之后和妈妈一起打磨、配 GIF 和 YouTube）
+# body_part: 臀腿 | 核心腰 | 手臂 | 胸背 | 肩颈 | 全身
+# intensity: 轻松 | 中等 | 加把劲    aspects(多选): 力量 | 柔韧性 | 稳定性
+exercises:
+
+  # ---------- 弹力圈 loop-band（按妈妈定的优先级排序）----------
+  # 第一优先 ★★★★★
+  - id: clamshell
+    tool: loop-band
+    name: 蚌壳式
+    body_part: 臀腿
+    intensity: 轻松
+    aspects: [稳定性, 力量]
+    minutes: 3
+    sets: 2 组 × 每边 12 到 15 次
+    target: 臀中肌
+    muscles: [gluteal]
+    gif: /static/gif/clamshell.gif
+    video: https://www.bilibili.com/video/BV1gU4y1p7UC/
+    why: 稳定骨盆、保护膝盖、改善走路姿势。很温和，特别适合当热身，或者膝盖不太舒服的日子。
+    science_tip: 像贝壳张开一样打开上面那条腿的膝盖，两只脚跟并拢不动，感受屁股外侧在发力。
+    dos: [侧躺屈膝, 弹力圈套在膝盖上方, 慢慢打开再收回]
+    donts: [别让身体往后倒, 别靠晃动借力, 别耸肩缩脖子]
+    self_check:
+      - {where: 臀部外侧, symptom: 发酸, verdict: ok}
+      - {where: 腰, symptom: 疼, verdict: check}
+
+  - id: lateral-walk
+    tool: loop-band
+    name: 螃蟹步
+    body_part: 臀腿
+    intensity: 中等
+    aspects: [力量, 稳定性]
+    minutes: 4
+    sets: 2 组 × 每边 10 到 12 步
+    target: 臀中肌 + 臀小肌
+    muscles: [gluteal]
+    gif: /static/gif/lateral-walk.gif
+    why: 防止膝盖往里扣，让走路和爬楼梯更轻松、更稳。
+    science_tip: 微微屈膝半蹲，一步一步有控制地横着走，全程膝盖对着脚尖、别被弹力圈拉得内扣。
+    dos: [弹力圈套在膝盖上方, 微微屈膝半蹲, 背挺直横着走]
+    donts: [别塌腰, 膝盖别往里扣, 别把腿甩来甩去]
+    self_check:
+      - {where: 臀部外侧, symptom: 发酸, verdict: ok}
+      - {where: 膝盖, symptom: 疼痛, verdict: stop}
+      - {where: 腰, symptom: 酸痛, verdict: check}
+
+  - id: sit-to-stand
+    tool: loop-band
+    name: 坐站（从椅子起身）
+    body_part: 臀腿
+    intensity: 中等
+    aspects: [力量, 稳定性]
+    minutes: 4
+    sets: 2 组 × 10 到 12 次
+    target: 股四头肌 + 臀大肌
+    muscles: [quadriceps, gluteal]
+    gif: /static/gif/sit-to-stand.gif
+    why: 练大腿和臀部的力量，还有平衡。从椅子上稳稳站起来，是上了年纪最实用、最该练的动作之一。
+    science_tip: 从椅子上站起来、再慢慢坐下。累的话可以先扶一下；能不用手就尽量不用手，效果更好。
+    dos: [弹力圈套在膝盖上方, 坐在椅子前半段, 挺胸用腿和臀站起来]
+    donts: [膝盖别内扣, 别猛地弹起来, 坐下时别一下砸到椅子上]
+    self_check:
+      - {where: 大腿和屁股, symptom: 发酸, verdict: ok}
+      - {where: 膝盖, symptom: 疼痛, verdict: stop}
+
+  - id: glute-bridge
+    tool: loop-band
+    name: 臀桥
+    body_part: 臀腿
+    intensity: 中等
+    aspects: [力量, 稳定性]
+    minutes: 4
+    sets: 2 组 × 12 到 15 次
+    target: 臀大肌 + 臀中肌
+    muscles: [gluteal]
+    why: 练臀部力量，保护腰和膝盖，让起身、上楼更有劲。
+    science_tip: 桥顶到最高时，轻轻把两个膝盖往外推、顶着弹力圈，能更好地练到臀中肌。
+    dos: [平躺屈膝, 弹力圈套在膝盖上方, 用臀把髋顶高、膝盖轻轻外推]
+    donts: [别用腰硬顶, 别憋气, 别塌着膝盖内扣]
+    gif: /static/gif/glute-bridge.gif
+    video: https://www.youtube.com/watch?v=HeAkXWob2UU
+    self_check:
+      - {where: 屁股, symptom: 发酸发热, verdict: ok}
+      - {where: 腰, symptom: 顶起来时疼, verdict: check}
+
+  - id: standing-hip-abduction
+    tool: loop-band
+    name: 卧姿侧抬腿
+    body_part: 臀腿
+    intensity: 轻松
+    aspects: [稳定性, 力量]
+    minutes: 3
+    sets: 2 组 × 每边 10 到 12 次
+    target: 臀中肌
+    muscles: [gluteal]
+    why: 侧躺着把上面那条腿往上抬，专门练臀部外侧的稳定肌。髋稳了，走路、上下楼、单脚站立都更稳当，也更护膝护腰。
+    science_tip: 侧躺时身体摆成一条直线，用臀部外侧的力量把腿抬起，别靠腰或身体后仰去带。抬到臀部外侧明显发力就够了，慢起慢落比抬高更重要。
+    dos: [侧躺身体成一条直线, 弹力圈套在膝盖上方, 用臀部外侧慢慢把上面的腿抬起再放下]
+    donts: [别靠腰或身体后仰去带腿, 别抬太快, 别让骨盆往后倒]
+    gif: /static/gif/side-leg-raise.gif
+    video: https://www.youtube.com/watch?v=3w0cmENyeAw
+    self_check:
+      - {where: 臀部外侧, symptom: 发酸发热, verdict: ok}
+      - {where: 腰, symptom: 疼, verdict: check}
+
+  # 第二优先 ★★★★☆
+  - id: monster-walk
+    tool: loop-band
+    name: 怪兽走
+    body_part: 臀腿
+    intensity: 中等
+    aspects: [力量, 稳定性]
+    minutes: 4
+    sets: 2 组 × 向前斜走 10 步
+    target: 臀中肌 + 臀大肌
+    muscles: [gluteal]
+    why: 臀部全程持续发力，练走路的稳定和力量，非常适合出门旅游、要走很多路之前练。
+    science_tip: 微微屈膝，向前斜着一步一步走（像螃蟹往前挪），全程保持弹力圈是绷紧的、膝盖别内扣。
+    dos: [弹力圈套在膝盖上方, 微微屈膝, 向前斜着走保持圈绷紧]
+    donts: [别站太直让圈松掉, 膝盖别内扣, 别塌腰]
+    gif: /static/gif/monster-walk.gif
+    video: https://www.youtube.com/watch?v=kfm8QOPfD9k
+    self_check:
+      - {where: 臀部, symptom: 发酸发热, verdict: ok}
+      - {where: 膝盖, symptom: 疼痛, verdict: stop}
+
+  - id: mini-squat
+    tool: loop-band
+    name: 浅蹲
+    body_part: 臀腿
+    intensity: 轻松
+    aspects: [力量, 稳定性]
+    minutes: 3
+    sets: 2 组 × 10 到 12 次
+    target: 大腿 + 臀
+    muscles: [quadriceps, gluteal]
+    why: 温和地练腿和臀，蹲得浅、更安全，适合刚开始练。
+    science_tip: 只蹲一点点（浅蹲）就行，不用蹲太低；膝盖对着脚尖方向，扶着东西会更稳。
+    dos: [弹力圈套在膝盖上方, 脚与肩同宽, 浅浅下蹲再站起]
+    donts: [别蹲太低, 膝盖别内扣, 别塌腰弓背]
+    gif: /static/gif/mini-squat.gif
+    video: https://www.youtube.com/watch?v=o1T4XRv1FU4
+    self_check:
+      - {where: 大腿和屁股, symptom: 发酸, verdict: ok}
+      - {where: 膝盖, symptom: 疼痛, verdict: stop}
+
+  - id: fire-hydrant
+    tool: loop-band
+    name: 消防栓式（四点跪姿开髋）
+    body_part: 臀腿
+    intensity: 轻松
+    aspects: [力量, 稳定性]
+    minutes: 3
+    sets: 2 组 × 每边 12 次
+    target: 臀中肌
+    muscles: [gluteal]
+    why: 练臀中肌，让骨盆和膝盖更稳。膝盖舒服的日子做；跪着不舒服就跳过、换别的动作。
+    science_tip: 四点跪姿（手和膝盖撑地），把一条腿像小狗抬腿一样往外侧抬开，上身别跟着歪。
+    dos: [四点跪姿手膝撑地, 弹力圈套在膝盖上方, 一条腿侧向抬开]
+    donts: [别塌腰, 别用身体转动去带腿, 膝盖跪着疼就别做]
+    gif: /static/gif/fire-hydrant.gif
+    video: https://www.youtube.com/shorts/9AGHLxZ049c
+    self_check:
+      - {where: 臀部外侧, symptom: 发酸, verdict: ok}
+      - {where: 膝盖, symptom: 跪着疼, verdict: stop}
+      - {where: 腰, symptom: 疼, verdict: check}
+
+  - id: standing-march
+    tool: loop-band
+    name: 原地高抬腿
+    body_part: 臀腿
+    intensity: 轻松
+    aspects: [稳定性, 力量]
+    minutes: 3
+    sets: 2 组 × 每边 12 次
+    target: 屈髋肌 + 核心 + 平衡
+    muscles: [quadriceps, abs]
+    why: 提高走路能力和平衡，练"抬腿迈步"的稳定，走路更有力、更不容易绊倒。
+    science_tip: 弹力圈绑在两只脚上，扶着东西，原地一条腿一条腿地抬高（像踏步），站稳了再换腿。
+    dos: [弹力圈绑在两只脚上, 扶稳桌子或墙, 原地交替把腿抬高]
+    donts: [别驼背, 别为了抬高把腰带歪, 站不稳就扶紧]
+    gif: /static/gif/standing-march.gif
+    self_check:
+      - {where: 大腿根和核心, symptom: 发酸, verdict: ok}
+      - {where: 腰, symptom: 疼, verdict: check}
+
+  # ---------- 普拉提小球 pilates-ball ----------
+  - id: ball-bridge
+    tool: pilates-ball
+    name: 夹球单腿臀桥
+    body_part: 臀腿
+    intensity: 加把劲
+    aspects: [力量, 稳定性]
+    minutes: 4
+    sets: 2 组 × 每边 10 次
+    target: 臀大肌 + 核心
+    muscles: [gluteal, abs]
+    why: 比双腿臀桥更进阶：小球垫在髋下，一条腿撑地顶髋、另一条腿伸直抬起，专门练单侧臀部和核心的稳定。和弹力圈臀桥区分开，练的是"单腿也稳得住"的能力。
+    science_tip: 小球垫在髋（骶骨）下当支撑，一条腿踩稳、把髋顶住别塌，另一条腿慢慢伸直抬起再放下，全程骨盆别左右歪。
+    dos: [小球垫在髋下, 一条腿踩稳顶住髋, 另一条腿慢慢伸直抬起]
+    donts: [别塌腰, 别让骨盆左右歪, 抬腿别乱甩]
+    gif: /static/gif/ball-bridge.gif
+    video: https://www.youtube.com/watch?v=VhMjT8CD8w0
+    self_check:
+      - {where: 屁股和核心, symptom: 发酸, verdict: ok}
+      - {where: 腰, symptom: 疼, verdict: check}
+
+  - id: wall-ball-squat
+    tool: pilates-ball
+    name: 靠墙夹球深蹲
+    body_part: 臀腿
+    intensity: 中等
+    aspects: [力量, 稳定性]
+    minutes: 4
+    sets: 2 组 × 12 次
+    target: 大腿 + 臀
+    muscles: [quadriceps, gluteal]
+    why: 靠墙更安全，膝间夹着小球下蹲，一边练腿的力量、一边练大腿内侧夹紧，让蹲下起身、上下楼都更有底气。
+    science_tip: 后背靠墙，膝盖之间夹住小球别让它掉，慢慢蹲到大腿快平就行，不用太深，膝盖对着脚尖方向。
+    dos: [后背靠墙站稳, 膝盖之间夹住小球, 慢慢下蹲再起]
+    donts: [别蹲到膝盖疼的深度, 别膝盖内扣把球挤掉, 别塌腰]
+    gif: /static/gif/wall-ball-squat.gif
+    self_check:
+      - {where: 大腿, symptom: 发酸, verdict: ok}
+      - {where: 膝盖, symptom: 疼痛, verdict: stop}
+
+  - id: seated-squeeze
+    tool: pilates-ball
+    name: 坐姿夹球
+    body_part: 核心腰
+    intensity: 轻松
+    aspects: [稳定性, 力量]
+    minutes: 3
+    sets: 2 组 × 15 次
+    target: 盆底肌 + 大腿内侧
+    muscles: [adductors]
+    why: 很温和，坐着就能练盆底肌和核心，对久坐、腰没劲很有帮助。
+    science_tip: 夹的时候慢慢收紧、停两秒再放松，配合呼气用力。
+    dos: [坐正, 膝间夹球, 慢慢夹紧再松开]
+    donts: [别憋气猛夹, 别驼背]
+    gif: /static/gif/seated-squeeze.gif
+    video: https://www.youtube.com/shorts/ctuoGJQDBcI
+    self_check:
+      - {where: 大腿内侧, symptom: 发酸, verdict: ok}
+
+  # ---------- 弹力带 resistance-band（按妈妈定的优先级排序）----------
+  # 第一优先 ★★★★★
+  - id: band-row
+    tool: resistance-band
+    name: 弹力带划船
+    body_part: 胸背
+    intensity: 中等
+    aspects: [力量]
+    minutes: 4
+    sets: 2 组 × 12 到 15 次
+    target: 背阔肌 + 菱形肌 + 后肩
+    muscles: [upper-back, deltoids]
+    why: 划船是最能改善圆肩驼背的动作之一，练好背部力量，以后抱孙子、拎东西都更轻松，站得更挺。
+    science_tip: 拉的时候先把两块肩胛骨往中间收紧，再用手肘带动往后拉，想着用背发力，不是用手臂。
+    band: 粗一点的那条（练力量）
+    dos: [坐直或站稳，弹力带固定在前方（比如门把手上）, 手臂微屈往后拉肘, 感受两侧肩胛骨往中间收]
+    donts: [别耸肩, 别弓背前倾借力, 别拉到手臂完全伸直再放松]
+    gif: /static/gif/seated-row.gif
+    video: https://www.youtube.com/watch?v=whSXi-EXbqI
+    self_check:
+      - {where: 后背和后肩, symptom: 发酸, verdict: ok}
+      - {where: 脖子和肩膀, symptom: 紧绷发酸, verdict: check}
+      - {where: 下背, symptom: 刺痛, verdict: stop}
+
+  - id: band-face-pull
+    tool: resistance-band
+    name: 弹力带面拉
+    body_part: 肩颈
+    intensity: 中等
+    aspects: [力量]
+    minutes: 3
+    sets: 2 组 × 15 次
+    target: 后束三角肌 + 菱形肌 + 下斜方肌 + 肩袖
+    muscles: [deltoids, upper-back, trapezius]
+    why: 专门练肩膀后侧和肩胛周围的小肌肉，几乎人人都该练一练，能明显改善圆肩、缓解肩颈酸痛。
+    science_tip: 固定点略高于头，往脸的方向拉，拉的时候手肘打开、往两侧后方带，想象把耳朵后面的空气抓住。
+    band: 薄一点的那条（更轻）
+    dos: [弹力带固定在略高于头的位置, 双手握住带子往脸的方向拉, 拉开时手肘朝外打开]
+    donts: [别耸肩, 别用腰往后仰借力, 别拉得太快]
+    gif: /static/gif/face-pull.gif
+    video: https://www.youtube.com/watch?v=uX5W2kynMIo
+    self_check:
+      - {where: 肩后和上背, symptom: 发酸, verdict: ok}
+      - {where: 脖子, symptom: 紧绷, verdict: check}
+      - {where: 肩膀, symptom: 刺痛, verdict: stop}
+
+  - id: band-chest-press
+    tool: resistance-band
+    name: 弹力带推胸
+    body_part: 胸背
+    intensity: 中等
+    aspects: [力量]
+    minutes: 3
+    sets: 2 组 × 12 次
+    target: 胸 + 三头肌
+    muscles: [chest, triceps]
+    why: 练胸和手臂前侧的力量，推门、从地上抱起东西再站起来都会更有劲。
+    science_tip: 双手推到手臂快伸直就好，不用完全锁死手肘，推的时候呼气、收的时候吸气。
+    band: 粗一点的那条（练力量）
+    dos: [固定在门上, 面朝反方向站稳, 双手向前平推再慢慢收回]
+    donts: [别耸肩, 别猛地推出去, 别憋气]
+    gif: /static/gif/chest-press.gif
+    video: https://www.youtube.com/shorts/T0UJ0W-_yIE
+    self_check:
+      - {where: 胸和手臂, symptom: 发酸, verdict: ok}
+      - {where: 肩膀, symptom: 刺痛, verdict: stop}
+
+  - id: band-lat-pulldown
+    tool: resistance-band
+    name: 高位下拉
+    body_part: 胸背
+    intensity: 中等
+    aspects: [力量]
+    minutes: 4
+    sets: 2 组 × 12 次
+    target: 背阔肌
+    muscles: [upper-back]
+    why: 模拟从高处往下拉的动作，专门练背阔肌，能改善姿势，也让拉、拽东西的能力变强。
+    science_tip: 拉下来的时候想着用手肘往下往后带，而不是只用手抓，感受后背在用力而不是手臂。
+    band: 粗一点的那条（练力量）
+    dos: [固定在高处, 双手握住带子两端, 手肘往下往后拉到胸前]
+    donts: [别用身体后仰借力, 别耸肩, 别拉得太快没有控制]
+    gif: /static/gif/lat-pulldown.gif
+    video: https://www.youtube.com/shorts/RMqMUiHW5eQ
+    self_check:
+      - {where: 后背, symptom: 发酸, verdict: ok}
+      - {where: 脖子肩膀, symptom: 紧绷, verdict: check}
+
+  - id: band-pallof-press
+    tool: resistance-band
+    name: 抗旋转
+    body_part: 核心腰
+    intensity: 中等
+    aspects: [力量, 稳定性]
+    minutes: 3
+    sets: 2 组 × 每边 10 到 12 次
+    target: 核心（腹斜肌为主）
+    muscles: [abs, obliques]
+    why: 这个动作专门保护腰，还能提高平衡感、预防跌倒，是特别推荐的一个核心动作。
+    science_tip: 弹力带会往一侧拉你，你的任务是让身体和手臂都稳稳地保持不动、不被拉偏。
+    band: 粗一点的那条（练力量）
+    dos: [弹力带固定在身体侧面, 双手抱住带子放在胸前, 慢慢往前推出再收回、身体不转动]
+    donts: [别让身体被弹力带拉歪, 别塌腰, 别憋气]
+    gif: /static/gif/pallof-press.gif
+    video: https://www.youtube.com/watch?v=y1fOBVtANdM
+    self_check:
+      - {where: 腹部核心, symptom: 发酸发紧, verdict: ok}
+      - {where: 腰, symptom: 疼, verdict: check}
+
+  # 第二优先 ★★★★☆
+  - id: band-external-rotation
+    tool: resistance-band
+    name: 肩外旋
+    body_part: 肩颈
+    intensity: 轻松
+    aspects: [力量, 稳定性]
+    minutes: 3
+    sets: 2 组 × 每边 12 到 15 次
+    target: 肩袖
+    muscles: [deltoids]
+    why: 专门练肩袖这一圈小肌肉，对上了年纪的肩膀特别友好，能明显减少肩痛、让抬手更顺畅。
+    science_tip: 手肘夹紧贴着身体两侧不要动，只靠前臂转动带子，动作要慢，感受肩膀后侧发力。
+    band: 薄一点的那条（更轻）
+    dos: [手肘弯曲九十度夹紧腰侧, 弹力带固定在身体侧面, 前臂慢慢往外转动再收回]
+    donts: [别让手肘离开身体, 别转得太快, 别耸肩]
+    gif: /static/gif/external-rotation.gif
+    video: https://www.bilibili.com/video/BV1uG411Z73X/
+    extra_videos:
+      - https://www.bilibili.com/video/BV1gztjebExV/
+    self_check:
+      - {where: 肩膀后侧, symptom: 发酸, verdict: ok}
+      - {where: 肩膀, symptom: 刺痛, verdict: stop}
+
+  - id: band-pull-apart
+    tool: resistance-band
+    name: 双手拉开
+    body_part: 肩颈
+    intensity: 轻松
+    aspects: [力量]
+    minutes: 3
+    sets: 2 组 × 15 次
+    target: 后肩 + 上背
+    muscles: [deltoids, upper-back]
+    why: 改善含胸的姿势，动作特别简单，每天花五分钟练一练，肩颈会松快很多。
+    science_tip: 双手拉开的时候，想着把两块肩胛骨往中间挤一下，停一秒再慢慢放松。
+    band: 薄一点的那条（更轻）
+    dos: [双手拉直弹力带在胸前, 双手慢慢往两侧拉开, 挤压肩胛骨停顿一秒再放松]
+    donts: [别耸肩, 别拉得太猛, 别弓背]
+    gif: /static/gif/pull-apart.gif
+    video: https://www.youtube.com/watch?v=stwYTTPXubo
+    self_check:
+      - {where: 后肩和上背, symptom: 发酸, verdict: ok}
+      - {where: 脖子, symptom: 紧绷, verdict: check}
+
+  - id: band-biceps-curl
+    tool: resistance-band
+    name: 二头弯举
+    body_part: 手臂
+    intensity: 轻松
+    aspects: [力量]
+    minutes: 3
+    sets: 2 组 × 12 到 15 次
+    target: 二头肌
+    muscles: [biceps]
+    why: 直接对应提菜、提水这些日常动作，练好了手臂拎重物会明显更轻松。
+    science_tip: 手肘固定在身体两侧不要前后晃，只靠前臂弯曲上举，慢慢放下更能练到力量。
+    band: 粗一点的那条（练力量）
+    dos: [脚踩住弹力带, 手肘贴紧腰侧, 弯举时手肘不前后移动]
+    donts: [别用身体晃动借力, 别耸肩, 别放得太快]
+    gif: /static/gif/biceps-curl.gif
+    video: https://www.youtube.com/shorts/K80b3lPa7jQ
+    self_check:
+      - {where: 手臂前侧, symptom: 发酸, verdict: ok}
+      - {where: 手肘, symptom: 疼, verdict: check}
+
+  - id: band-triceps-extension
+    tool: resistance-band
+    name: 三头臂屈伸（过顶）
+    body_part: 手臂
+    intensity: 中等
+    aspects: [力量]
+    minutes: 3
+    sets: 2 组 × 12 到 15 次
+    target: 三头肌
+    muscles: [triceps]
+    why: 三头肌有劲了，从椅子上撑起来、推东西都会更顺，是容易被忽略但很实用的一块肌肉。
+    science_tip: 弹力带踩在脚下，双手在头顶后方握住带子，手肘固定朝上不动，只把前臂往上伸直再慢慢弯回，感受手臂后侧发力。
+    band: 粗一点的那条（练力量）
+    dos: [弹力带踩在脚下, 双手在头后握带、手肘朝上固定, 只伸直前臂把带子往上顶再慢慢弯回]
+    donts: [别让手肘外张乱晃, 别耸肩, 别用腰去带]
+    gif: /static/gif/triceps-extension.gif
+    video: https://www.youtube.com/shorts/WtM2MgYh6lM
+    self_check:
+      - {where: 手臂后侧, symptom: 发酸, verdict: ok}
+      - {where: 手肘, symptom: 疼, verdict: check}
+
+  - id: band-good-morning
+    tool: resistance-band
+    name: Good Morning 早安式
+    body_part: 臀腿
+    intensity: 中等
+    aspects: [力量, 稳定性]
+    minutes: 4
+    sets: 2 组 × 10 到 12 次
+    target: 臀腿后链（臀大肌 + 腘绳肌）+ 下背
+    muscles: [gluteal, hamstring, lower-back]
+    why: 这个动作练的是臀腿后侧的链条力量，对久坐、弯腰有帮助，不过技术含量稍高，建议先把动作标准练熟，再考虑增加强度。
+    science_tip: 是屁股往后坐、髋部往后折叠，膝盖只是微微弯曲，不是弯腰弓背；感受大腿后侧和屁股被拉伸，而不是腰在用力。
+    band: 粗一点的那条（练力量）
+    dos: [踩住弹力带, 弹力带绕过后颈或肩上, 屁股向后坐、上身前倾到与地面接近平行再站起]
+    donts: [别弓背弯腰, 别蹲得太深, 膝盖别锁死也别过度弯曲]
+    gif: /static/gif/good-morning.gif
+    self_check:
+      - {where: 屁股和大腿后侧, symptom: 有拉伸感或发酸, verdict: ok}
+      - {where: 下背, symptom: 酸胀, verdict: check}
+      - {where: 腰, symptom: 刺痛, verdict: stop}
+
+  # ---------- 软壶铃 kettlebell（按等级分组）----------
+  # 🟢 初级 · 每天都可以
+  - id: goblet-squat
+    tool: kettlebell
+    name: 高脚杯深蹲
+    body_part: 臀腿
+    intensity: 中等
+    level: 🟢 初级 · 每天都可以
+    aspects: [力量, 稳定性]
+    minutes: 4
+    sets: 2 组 × 12 次
+    target: 股四头肌 + 臀大肌 + 核心
+    muscles: [quadriceps, gluteal, abs]
+    why: 双手抱着壶铃在胸前蹲下再站起，重量帮你蹲得更稳更标准，直接对应坐下站起、上下楼梯这些每天都会用到的能力。
+    science_tip: 抱稳壶铃贴近胸口，蹲到大腿差不多平行地面就够了，全程膝盖对着脚尖方向、别往里扣。
+    dos: [双手抱壶铃贴于胸前, 脚略比肩宽站稳, 蹲下时挺胸沉髋、膝盖对脚尖]
+    donts: [别塌腰弓背, 膝盖别往里扣, 别蹲到膝盖疼的深度]
+    gif: /static/gif/goblet-squat.gif
+    video: https://www.youtube.com/watch?v=EkSAynpQxuo
+    self_check:
+      - {where: 大腿和屁股, symptom: 发酸, verdict: ok}
+      - {where: 膝盖, symptom: 疼痛, verdict: stop}
+      - {where: 腰, symptom: 疼, verdict: check}
+
+  - id: kb-sit-to-stand
+    tool: kettlebell
+    name: 抱壶铃单腿坐站
+    body_part: 臀腿
+    intensity: 中等
+    level: 🟢 初级 · 每天都可以
+    aspects: [力量, 稳定性]
+    minutes: 3
+    sets: 2 组 × 每边 8 到 10 次
+    target: 股四头肌 + 臀大肌
+    muscles: [quadriceps, gluteal]
+    why: 坐站的进阶版：一只脚抬起来、只用另一条腿坐下再站起，专门练单腿的力量和稳定，对上下楼、单脚站得稳特别有用。太吃力就先从双腿坐站开始。
+    science_tip: 抱着壶铃贴近胸口，一只脚踩稳、另一只脚轻轻抬起向前伸，用踩地那条腿慢慢站起来再坐下；控制不住就减轻重量或先扶着。
+    dos: [双手抱壶铃贴于胸前, 一只脚踩稳、另一只脚抬起前伸, 用单腿慢慢站起再坐下]
+    donts: [膝盖别内扣, 别猛地弹起来, 坐下时别一下砸到椅子上]
+    gif: /static/gif/kb-sit-to-stand.gif
+    video: https://www.youtube.com/watch?v=JWz6J6ueuRw
+    self_check:
+      - {where: 大腿和屁股, symptom: 发酸, verdict: ok}
+      - {where: 膝盖, symptom: 疼痛, verdict: stop}
+
+  # 🔵 进阶 · 力量提升
+  - id: deadlift
+    tool: kettlebell
+    name: 壶铃硬拉
+    body_part: 臀腿
+    intensity: 加把劲
+    level: 🔵 进阶 · 力量提升
+    aspects: [力量]
+    minutes: 4
+    sets: 2 组 × 10 次
+    target: 臀部 + 大腿后侧
+    muscles: [gluteal, hamstring]
+    why: 练的是"髋铰链"这个动作模式——屁股往后坐、上身前倾，再用臀腿把髋顶直站起来。学会了以后弯腰搬东西、拎重物都不容易闪到腰，也能把臀和大腿后侧练得更有力。先从双腿版做熟，稳了再升级到单腿。
+    science_tip: 是屁股往后坐、髋部折叠，不是弯腰弓背；膝盖只微微弯，壶铃贴着腿往下滑，感受大腿后侧被拉伸，再用臀和腿把髋顶直站起来。
+    dos: [双手提壶铃站直, 膝盖微屈、髋部向后推, 上身前倾到有拉伸感再用臀腿站起]
+    donts: [别弓背弯腰, 膝盖别过度弯曲变成深蹲, 别弯到腰疼的幅度]
+    gif: /static/gif/rdl.gif
+    video: https://www.youtube.com/watch?v=V6XTfsdX_V8
+    advanced_name: 进阶 · 单腿罗马尼亚硬拉
+    advanced_intro: 双腿做熟之后，可以挑战单腿版——单脚站立、另一条腿向后伸直，只用一条腿做髋铰链，更练平衡和单侧的臀腿力量。什么时候可以升级：双腿硬拉能连做两组、全程腰不酸不疼、动作稳，并且能不扶东西单脚站稳 10 秒以上，就可以从很轻的重量开始试单腿。
+    advanced_video: https://www.bilibili.com/video/BV1Q5411H7vW/
+    self_check:
+      - {where: 屁股和大腿后侧, symptom: 发酸或有拉伸感, verdict: ok}
+      - {where: 下背, symptom: 酸胀, verdict: check}
+      - {where: 腰, symptom: 刺痛, verdict: stop}
+
+
+  - id: step-up
+    tool: kettlebell
+    name: 抱壶铃踏台阶
+    body_part: 臀腿
+    intensity: 加把劲
+    level: 🔵 进阶 · 力量提升
+    aspects: [力量, 稳定性]
+    minutes: 4
+    sets: 2 组 × 每边 10 次
+    target: 臀腿 + 平衡
+    muscles: [quadriceps, gluteal]
+    why: 直接练上台阶这个动作本身，练好了以后爬楼梯、出门旅游走山路、上下车都更有底气。
+    science_tip: 全脚掌踩稳台阶再用力站上去，别用后脚去蹬地借力，控制住下来的速度而不是直接跳下。
+    dos: [选一个矮而稳固的台阶或箱子, 抱稳壶铃贴于胸前, 全脚掌踩稳后站直、再慢慢下来]
+    donts: [别用后脚蹬地借力, 台阶别选太高, 下台阶时别猛地砸下去]
+    gif: /static/gif/step-up.gif
+    self_check:
+      - {where: 大腿和屁股, symptom: 发酸, verdict: ok}
+      - {where: 膝盖, symptom: 疼痛, verdict: stop}
+      - {where: 平衡感, symptom: 站不稳晃动, verdict: check}
+
+  - id: swing
+    tool: kettlebell
+    name: 壶铃摇摆
+    body_part: 臀腿
+    intensity: 加把劲
+    level: 🔵 进阶 · 力量提升
+    aspects: [力量, 稳定性]
+    minutes: 4
+    sets: 2 组 × 12 到 15 次
+    target: 臀部 + 腘绳肌 + 核心
+    muscles: [gluteal, hamstring, abs]
+    why: 用髋部的爆发力把壶铃荡起来，练臀腿力量的同时也练到心肺，是很好的全身发力动作。属于进阶动作，等硬拉、髋铰链掌握熟了再练。
+    science_tip: 力量来自臀不是手臂：髋部往后坐，再快速前顶把壶铃"荡"到胸口高度，手臂只是挂着壶铃。全程背挺直，别用腰去甩、别荡过头顶。练对了才不伤腰。
+    dos: [双手握住壶铃把手, 髋部后坐再快速前顶发力, 用臀把壶铃荡到胸前高度]
+    donts: [别用手臂去抬壶铃, 别弓腰用腰甩, 别荡过头顶]
+    gif: /static/gif/swing.gif
+    video: https://www.bilibili.com/video/BV1TKE96CETW/
+    self_check:
+      - {where: 臀和大腿后侧, symptom: 发酸, verdict: ok}
+      - {where: 腰, symptom: 疼, verdict: stop}
+
+  # 🟣 灵活性与稳定性
+  - id: halo
+    tool: kettlebell
+    name: 光环（绕头转壶铃）
+    body_part: 肩颈
+    intensity: 轻松
+    level: 🟣 灵活性与稳定性
+    aspects: [柔韧性, 稳定性]
+    minutes: 3
+    sets: 2 组 × 每边 6 到 8 圈
+    target: 肩膀灵活性 + 胸椎活动度 + 核心
+    muscles: [deltoids, upper-back, abs]
+    why: 这是很好的肩膀和上背活动度练习，没有肩痛的话每天转一转，肩颈会松快很多。
+    science_tip: 壶铃贴近头部绕一圈，动作要慢、有控制，核心收紧不要跟着身体晃动。
+    dos: [双手抱稳壶铃倒扣, 贴近头部慢慢绕圈, 核心收紧保持身体稳定]
+    donts: [别把壶铃甩得离头太远, 别耸肩, 有肩痛就跳过这个动作]
+    gif: /static/gif/halo.gif
+    video: https://www.bilibili.com/video/BV13EqgBrEhR/
+    self_check:
+      - {where: 肩膀, symptom: 活动开的感觉, verdict: ok}
+      - {where: 肩膀, symptom: 刺痛, verdict: stop}
+
+  - id: around-the-world
+    tool: kettlebell
+    name: 绕腰传壶铃
+    body_part: 核心腰
+    intensity: 轻松
+    level: 🟣 灵活性与稳定性
+    aspects: [稳定性, 柔韧性]
+    minutes: 3
+    sets: 2 组 × 每边 6 到 8 圈
+    target: 核心控制 + 肩膀协调 + 握力
+    muscles: [abs, deltoids, forearm]
+    why: 绕着腰把壶铃从一只手传到另一只手，重量不大、安全又有趣，同时练到核心和握力。
+    science_tip: 站稳收紧核心，让壶铃绕着腰传递，身体保持直立不要跟着扭动或后仰。
+    dos: [站稳双脚与肩同宽, 核心收紧腰背挺直, 绕腰传递壶铃到另一只手接住]
+    donts: [别弓腰或后仰去够壶铃, 别让壶铃掉落砸到脚, 别憋气]
+    gif: /static/gif/around-the-world.gif
+    self_check:
+      - {where: 核心和手臂, symptom: 发酸, verdict: ok}
+      - {where: 腰, symptom: 疼, verdict: check}
+

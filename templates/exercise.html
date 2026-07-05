@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block title %}{{ ex.name }} · {{ tool.name }}{% endblock %}
+{% block body %}
+<a class="crumb" href="/tools/{{ tool.id }}/">‹ {{ tool.name }}</a>
+
+<div class="exnav exnav-top">
+  {% if prev_ex %}<a class="exnav-prev" href="/tools/{{ tool.id }}/{{ prev_ex.id }}/">← 上一个 · {{ prev_ex.name }}</a>{% endif %}
+  {% if next_ex %}<a class="exnav-next" href="/tools/{{ tool.id }}/{{ next_ex.id }}/">下一个 · {{ next_ex.name }} →</a>{% endif %}
+</div>
+
+{% if ex.gif %}
+<div class="media"><img src="{{ ex.gif }}" alt="{{ ex.name }}"></div>
+{% else %}
+<div class="gifph">🎞 循环动图<br>{{ ex.name }}<br><span style="font-size:12px">（真实 GIF 后面放这里）</span></div>
+{% endif %}
+
+<div class="exname">{{ ex.name }}</div>
+
+<div class="blk"><div class="lab">为什么练</div><div class="val">{{ ex.why }}</div></div>
+
+<div class="muscle">
+  <div>练到什么位置 · <b>{{ ex.target }}</b>{% if ex.band %}<div class="msub">用：{{ ex.band }}</div>{% endif %}</div>
+</div>
+{% if anatomy_html %}{{ anatomy_html | safe }}{% endif %}
+
+<div class="blk">
+  <div class="lab">做多少</div>
+  <div class="val">{{ ex.sets }}</div>
+  {% if ex.science_tip %}
+  <details class="tip">
+    <summary>怎么判断合不合适？</summary>
+    <div class="tipbody">{{ ex.science_tip }}</div>
+  </details>
+  {% endif %}
+</div>
+
+{% if ex.dos or ex.donts %}
+<div class="dd">
+  <div class="col do"><h4>✓ 这样做</h4><ul>{% for d in ex.dos %}<li>{{ d }}</li>{% endfor %}</ul></div>
+  <div class="col no"><h4>✕ 别这样</h4><ul>{% for d in ex.donts %}<li>{{ d }}</li>{% endfor %}</ul></div>
+</div>
+{% endif %}
+
+{% if ex.self_check %}
+<div class="selfcheck">
+  <div class="sh">练完自查一下 · 哪里有反应？</div>
+  {% for s in ex.self_check %}
+  {% set icon, label = verdict_ui[s.verdict] %}
+  <div class="sc">
+    <span class="badge b-{{ s.verdict }}">{{ icon }}</span>
+    <span class="where">{{ s.where }}</span>
+    <span class="sym">{{ s.symptom }}</span>
+    <span class="verdict v-{{ s.verdict }}">{{ label }}</span>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% if ex.video_embed %}
+<div class="section-label" style="margin-top:6px">🎬 讲解视频</div>
+<div class="vcard"><div class="bili">
+  <iframe src="{{ ex.video_embed }}" scrolling="no" frameborder="0" allowfullscreen="true" loading="lazy"></iframe>
+</div></div>
+{% elif ex.video %}
+<a class="video" href="{{ ex.video }}" target="_blank" rel="noopener">
+  <span class="play">▶</span>
+  <span><span class="vt">看视频详解</span><br><span class="vs">打开视频</span></span>
+</a>
+{% endif %}
+
+{% for emb in ex.extra_video_embeds %}
+<div class="vcard"><div class="bili">
+  <iframe src="{{ emb }}" scrolling="no" frameborder="0" allowfullscreen="true" loading="lazy"></iframe>
+</div></div>
+{% endfor %}
+
+{% if ex.advanced_name %}
+<div class="advanced">
+  <div class="adv-tag">⬆ 升级版</div>
+  <div class="adv-name">{{ ex.advanced_name }}</div>
+  {% if ex.advanced_intro %}<div class="adv-intro">{{ ex.advanced_intro }}</div>{% endif %}
+  {% if ex.advanced_gif %}<div class="media"><img src="{{ ex.advanced_gif }}" alt="{{ ex.advanced_name }}"></div>{% endif %}
+  {% if ex.advanced_video_embed %}
+  <div class="section-label" style="margin-top:6px">🎬 单腿版讲解</div>
+  <div class="vcard"><div class="bili">
+    <iframe src="{{ ex.advanced_video_embed }}" scrolling="no" frameborder="0" allowfullscreen="true" loading="lazy"></iframe>
+  </div></div>
+  {% endif %}
+</div>
+{% endif %}
+
+<div class="exnav">
+  {% if prev_ex %}<a class="exnav-prev" href="/tools/{{ tool.id }}/{{ prev_ex.id }}/">← 上一个 · {{ prev_ex.name }}</a>{% endif %}
+  {% if next_ex %}<a class="exnav-next" href="/tools/{{ tool.id }}/{{ next_ex.id }}/">下一个 · {{ next_ex.name }} →</a>{% endif %}
+</div>
+<div class="exnav-back-row"><a class="exnav-back" href="/tools/{{ tool.id }}/">‹ 返回 {{ tool.name }}</a></div>
+{% endblock %}

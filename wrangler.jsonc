@@ -1,0 +1,11 @@
+{
+  // Static-assets Worker for your-site.example.com.
+  // The site is built by Python (`uv run python -m mama_site.cli` -> ./dist),
+  // then deployed via `npx wrangler deploy` (CLI). Cloudflare just serves ./dist;
+  // no Cloudflare-side build (its build env is Node, not Python).
+  "name": "mama-training",
+  "compatibility_date": "2026-07-04",
+  "assets": { "directory": "./dist" },
+  // Set your own custom domain, or delete "routes" to use the *.workers.dev URL.
+  "routes": [{ "pattern": "your-site.example.com", "custom_domain": true }]
+}

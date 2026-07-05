@@ -1,0 +1,29 @@
+# 用来练的器械（有动作、组数 x 次数）
+tools:
+  - id: loop-band
+    name: 弹力圈（翘臀圈）
+    emoji: 🟢
+    function: 练臀腿、稳定膝盖、减少腰疼
+    frequency: 每周 2 到 3 次
+    note: 环形的那条。套在大腿或小腿上，靠它的阻力练臀腿。
+
+  - id: pilates-ball
+    name: 普拉提小球
+    emoji: 🔵
+    function: 练核心、盆底肌，帮腰更有力、坐站更稳
+    frequency: 每周 2 到 3 次
+    note: 软软的小球。夹在两腿之间或垫在腰下，帮你找到发力的位置。
+
+  - id: resistance-band
+    name: 弹力带
+    emoji: 🎗️
+    function: 练上肢、背和腿，也能用来拉伸放松
+    frequency: 每周 2 到 3 次
+    note: 长条的那种，有两条。粗一点的用来练力量，薄一点的用来拉伸和康复。动作里会告诉你用哪条。
+
+  - id: kettlebell
+    name: 软壶铃（6 公斤）
+    emoji: 🏋️
+    function: 练全身力量，尤其臀腿，拎东西、起身更有劲
+    frequency: 每周 2 次
+    note: 软的壶铃，摔到脚也不疼。从最轻的用法开始，动作标准比重量重要。

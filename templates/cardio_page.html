@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}{{ cardio.name }} · {{ site.meta.brand }}{% endblock %}
+{% block body %}
+<a class="crumb" href="/tools/">‹ 器械总览</a>
+<div class="eqhead">
+  <div class="big"><img src="/static/img/{{ cardio.id }}.jpg" alt="" onerror="this.parentElement.textContent='{{ cardio.emoji }}'"></div>
+  <div><div class="nm">{{ cardio.name }}</div><div class="ds">{{ cardio.function }}</div></div>
+</div>
+
+{% if cardio.duration %}<div class="freq">建议 {{ cardio.duration }}</div>{% endif %}
+
+{% if cardio.how_to_use %}
+<div class="blk"><div class="lab">怎么用</div>
+  <ul class="infolist" style="margin-top:6px">{% for h in cardio.how_to_use %}<li>{{ h }}</li>{% endfor %}</ul>
+</div>
+{% endif %}
+
+{% if cardio.intensity %}
+<div class="blk"><div class="lab">练到什么强度</div><div class="val">{{ cardio.intensity }}</div></div>
+{% endif %}
+
+{% if cardio.knee_note %}
+<div class="caution">🦵 <b>护膝盖</b>：{{ cardio.knee_note }}</div>
+{% endif %}
+
+{% if cardio.self_check %}
+<div class="selfcheck">
+  <div class="sh">练的时候留意 · 身体信号</div>
+  {% for s in cardio.self_check %}
+  {% set icon, label = verdict_ui[s.verdict] %}
+  <div class="sc">
+    <span class="badge b-{{ s.verdict }}">{{ icon }}</span>
+    <span class="where">{{ s.where }}</span>
+    <span class="sym">{{ s.symptom }}</span>
+    <span class="verdict v-{{ s.verdict }}">{{ label }}</span>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% if cardio.video %}
+<a class="video" href="{{ cardio.video }}" target="_blank" rel="noopener">
+  <span class="play">▶</span><span><span class="vt">看视频详解</span><br><span class="vs">在 YouTube 打开</span></span>
+</a>
+{% endif %}
+{% endblock %}
