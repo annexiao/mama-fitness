@@ -309,6 +309,34 @@ details.tip .tipbody{padding-bottom:13px;line-height:1.65}
 .infolist li::before{content:"·";color:var(--accent);font-weight:700;font-size:20px;line-height:1.2}
 .whyblock{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:14px 18px;
   margin-bottom:8px;font-size:16px;color:#4f4940;white-space:pre-line;line-height:1.7}
+/* ---- 首页「训练小知识」浮卡：右上角固定，可收起，手机上默认收起以免挡内容 ---- */
+.daycard{position:fixed;top:72px;right:16px;width:322px;z-index:60;
+  background:var(--surface);border:1px solid var(--accent-line);border-radius:16px;
+  box-shadow:0 12px 34px rgba(120,92,40,.18);overflow:hidden}
+.daycard[hidden]{display:none}
+.daycard-head{display:flex;align-items:center;justify-content:space-between;gap:8px;
+  padding:11px 14px;cursor:pointer;background:var(--accent-soft);user-select:none}
+.daycard-eyebrow{font-size:13px;font-weight:600;color:var(--accent);letter-spacing:.02em}
+.daycard-toggle{border:none;background:none;color:var(--accent);font-size:15px;line-height:1;
+  cursor:pointer;padding:2px 4px;transition:transform .18s ease}
+.daycard.collapsed{width:auto}
+.daycard.collapsed .daycard-toggle{transform:rotate(-90deg)}
+.daycard-panel{padding:13px 15px 15px;max-height:min(64vh,520px);overflow-y:auto}
+.daycard.collapsed .daycard-panel{display:none}
+.daycard-group{font-size:11.5px;color:var(--ink-soft);margin-bottom:5px}
+.daycard-title{font-family:var(--serif);font-size:18px;color:var(--ink);margin:0 0 9px;line-height:1.32}
+.daycard-text{font-size:14px;color:var(--ink-soft);line-height:1.68}
+.daycard-text p{margin:0 0 9px}
+.daycard-text p:last-child{margin-bottom:0}
+.daycard-foot{display:flex;align-items:center;justify-content:flex-end;gap:10px;
+  margin-top:12px;padding-top:11px;border-top:1px solid var(--line)}
+.daycard-reroll{background:var(--accent-soft);color:var(--accent);border:none;border-radius:100px;
+  padding:6px 13px;font-size:12.5px;font-weight:600;cursor:pointer;font-family:inherit;white-space:nowrap}
+.daycard-reroll:hover{background:var(--accent-line)}
+@media (max-width:640px){
+  .daycard{top:108px;right:10px;width:min(82vw,290px)}
+  .daycard-panel{max-height:min(66vh,430px)}
+}
 .caution{background:var(--check-bg);border:1px solid #EAD9B6;border-radius:14px;padding:14px 16px;
   font-size:15px;color:#7a5a1c;margin-bottom:16px}
 .caution b{color:var(--check)}

@@ -166,3 +166,17 @@ def build(data_dir: Path, out_dir: Path) -> None:
             indent=2,
         ),
     )
+    # knowledge.json — flat list of every /learn article, for the home page's
+    # 「训练小知识」浮卡 (client-side random pick, different on each refresh).
+    _write(
+        out_dir / "knowledge.json",
+        json.dumps(
+            [
+                {"id": a.id, "title": a.title, "body": a.body, "group": g.label, "icon": g.icon}
+                for g in site.knowledge.groups
+                for a in g.articles
+            ],
+            ensure_ascii=False,
+            indent=2,
+        ),
+    )

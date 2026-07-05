@@ -63,6 +63,7 @@ class Exercise:
     donts: list[str] = field(default_factory=list)
     self_check: list[SelfCheck] = field(default_factory=list)
     gif: str = ""
+    gif_source: str = ""  # 源视频 URL + 秒数（如 "<url>  6-10s"）——GIF 不入库，靠这个用 skills/video-to-gif-cover 重建
     anatomy: str = ""
     video: str = ""  # a Bilibili or YouTube URL; embedded on the detail page
     extra_videos: list[str] = field(default_factory=list)  # additional 讲解 videos beyond `video`

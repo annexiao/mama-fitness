@@ -8,6 +8,50 @@
 
 <div class="famstrip" data-count="3" data-photos='{{ photos | tojson }}'></div>
 
+<div class="daycard" id="dayCard" hidden>
+  <div class="daycard-head" id="dayCardHead">
+    <span class="daycard-eyebrow">训练小知识 💡</span>
+    <button class="daycard-toggle" id="dayCardToggle" type="button" aria-label="收起或展开">▾</button>
+  </div>
+  <div class="daycard-panel" id="dayCardPanel">
+    <div class="daycard-group" id="dayCardGroup"></div>
+    <h3 class="daycard-title" id="dayCardTitle"></h3>
+    <div class="daycard-text" id="dayCardText"></div>
+    <div class="daycard-foot">
+      <button class="daycard-reroll" id="dayCardReroll" type="button">↻ 再翻一页</button>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var card=document.getElementById('dayCard');
+  var head=document.getElementById('dayCardHead');
+  fetch('/knowledge.json').then(function(r){return r.json();}).then(function(list){
+    if(!list||!list.length) return;
+    var last=-1;
+    var show=function(){
+      var i=Math.floor(Math.random()*list.length);
+      if(list.length>1){while(i===last){i=Math.floor(Math.random()*list.length);}}
+      last=i; var a=list[i];
+      document.getElementById('dayCardGroup').textContent=(a.icon?a.icon+' ':'')+a.group;
+      document.getElementById('dayCardTitle').textContent=a.title;
+      var tx=document.getElementById('dayCardText'); tx.innerHTML='';
+      (a.body||'').split(/\n\s*\n/).forEach(function(par){
+        var p=document.createElement('p'); p.textContent=par.trim();
+        if(p.textContent) tx.appendChild(p);
+      });
+      document.getElementById('dayCardPanel').scrollTop=0;
+    };
+    show();
+    // start collapsed on phones so the floating card never covers content
+    if(window.matchMedia('(max-width:640px)').matches) card.classList.add('collapsed');
+    card.hidden=false;
+    head.addEventListener('click', function(){ card.classList.toggle('collapsed'); });
+    document.getElementById('dayCardReroll').addEventListener('click', function(e){ e.stopPropagation(); show(); });
+  }).catch(function(){});
+})();
+</script>
+
 <div class="h2">今天练什么？</div>
 
 <div class="pickrow" data-group="bodyPart">

@@ -16,6 +16,7 @@ exercises:
     target: 臀中肌
     muscles: [gluteal]
     gif: /static/gif/clamshell.gif
+    gif_source: "https://www.youtube.com/watch?v=39t1SisyGQg  6-10s"
     video: https://www.bilibili.com/video/BV1gU4y1p7UC/
     why: 稳定骨盆、保护膝盖、改善走路姿势。很温和，特别适合当热身，或者膝盖不太舒服的日子。
     science_tip: 像贝壳张开一样打开上面那条腿的膝盖，两只脚跟并拢不动，感受屁股外侧在发力。
@@ -36,6 +37,7 @@ exercises:
     target: 臀中肌 + 臀小肌
     muscles: [gluteal]
     gif: /static/gif/lateral-walk.gif
+    gif_source: "https://www.youtube.com/shorts/et5EY0KDsGQ  2-6s"
     why: 防止膝盖往里扣，让走路和爬楼梯更轻松、更稳。
     science_tip: 微微屈膝半蹲，一步一步有控制地横着走，全程膝盖对着脚尖、别被弹力圈拉得内扣。
     dos: [弹力圈套在膝盖上方, 微微屈膝半蹲, 背挺直横着走]
@@ -56,6 +58,7 @@ exercises:
     target: 股四头肌 + 臀大肌
     muscles: [quadriceps, gluteal]
     gif: /static/gif/sit-to-stand.gif
+    gif_source: "https://www.youtube.com/shorts/P4rD8EZuKQI  5-11s"
     why: 练大腿和臀部的力量，还有平衡。从椅子上稳稳站起来，是上了年纪最实用、最该练的动作之一。
     science_tip: 从椅子上站起来、再慢慢坐下。累的话可以先扶一下；能不用手就尽量不用手，效果更好。
     dos: [弹力圈套在膝盖上方, 坐在椅子前半段, 挺胸用腿和臀站起来]
@@ -79,6 +82,7 @@ exercises:
     dos: [平躺屈膝, 弹力圈套在膝盖上方, 用臀把髋顶高、膝盖轻轻外推]
     donts: [别用腰硬顶, 别憋气, 别塌着膝盖内扣]
     gif: /static/gif/glute-bridge.gif
+    gif_source: "https://www.youtube.com/shorts/XZUaJezpCGM  1-3s (上下有广告，裁掉)"
     video: https://www.youtube.com/watch?v=HeAkXWob2UU
     self_check:
       - {where: 屁股, symptom: 发酸发热, verdict: ok}
@@ -99,6 +103,7 @@ exercises:
     dos: [侧躺身体成一条直线, 弹力圈套在膝盖上方, 用臀部外侧慢慢把上面的腿抬起再放下]
     donts: [别靠腰或身体后仰去带腿, 别抬太快, 别让骨盆往后倒]
     gif: /static/gif/side-leg-raise.gif
+    gif_source: "https://www.youtube.com/watch?v=3w0cmENyeAw  82-87s"
     video: https://www.youtube.com/watch?v=3w0cmENyeAw
     self_check:
       - {where: 臀部外侧, symptom: 发酸发热, verdict: ok}
@@ -160,6 +165,7 @@ exercises:
     dos: [四点跪姿手膝撑地, 弹力圈套在膝盖上方, 一条腿侧向抬开]
     donts: [别塌腰, 别用身体转动去带腿, 膝盖跪着疼就别做]
     gif: /static/gif/fire-hydrant.gif
+    gif_source: "https://www.youtube.com/shorts/9AGHLxZ049c  6-8s"
     video: https://www.youtube.com/shorts/9AGHLxZ049c
     self_check:
       - {where: 臀部外侧, symptom: 发酸, verdict: ok}
@@ -181,6 +187,7 @@ exercises:
     dos: [弹力圈绑在两只脚上, 扶稳桌子或墙, 原地交替把腿抬高]
     donts: [别驼背, 别为了抬高把腰带歪, 站不稳就扶紧]
     gif: /static/gif/standing-march.gif
+    gif_source: "https://www.youtube.com/shorts/87WwFpe_-hI  3-6s"
     self_check:
       - {where: 大腿根和核心, symptom: 发酸, verdict: ok}
       - {where: 腰, symptom: 疼, verdict: check}
@@ -221,6 +228,7 @@ exercises:
     dos: [后背靠墙站稳, 膝盖之间夹住小球, 慢慢下蹲再起]
     donts: [别蹲到膝盖疼的深度, 别膝盖内扣把球挤掉, 别塌腰]
     gif: /static/gif/wall-ball-squat.gif
+    gif_source: "https://www.youtube.com/shorts/uKW28Y3fbGc  7-12s"
     self_check:
       - {where: 大腿, symptom: 发酸, verdict: ok}
       - {where: 膝盖, symptom: 疼痛, verdict: stop}
@@ -240,6 +248,7 @@ exercises:
     dos: [坐正, 膝间夹球, 慢慢夹紧再松开]
     donts: [别憋气猛夹, 别驼背]
     gif: /static/gif/seated-squeeze.gif
+    gif_source: "https://www.youtube.com/shorts/mm87AHBg69g  6-7.5s"
     video: https://www.youtube.com/shorts/ctuoGJQDBcI
     self_check:
       - {where: 大腿内侧, symptom: 发酸, verdict: ok}
@@ -262,6 +271,7 @@ exercises:
     dos: [坐直或站稳，弹力带固定在前方（比如门把手上）, 手臂微屈往后拉肘, 感受两侧肩胛骨往中间收]
     donts: [别耸肩, 别弓背前倾借力, 别拉到手臂完全伸直再放松]
     gif: /static/gif/seated-row.gif
+    gif_source: "https://www.youtube.com/watch?v=whSXi-EXbqI  18-21s"
     video: https://www.youtube.com/watch?v=whSXi-EXbqI
     self_check:
       - {where: 后背和后肩, symptom: 发酸, verdict: ok}
@@ -284,6 +294,7 @@ exercises:
     dos: [弹力带固定在略高于头的位置, 双手握住带子往脸的方向拉, 拉开时手肘朝外打开]
     donts: [别耸肩, 别用腰往后仰借力, 别拉得太快]
     gif: /static/gif/face-pull.gif
+    gif_source: "https://www.youtube.com/watch?v=uX5W2kynMIo  121-126s"
     video: https://www.youtube.com/watch?v=uX5W2kynMIo
     self_check:
       - {where: 肩后和上背, symptom: 发酸, verdict: ok}
@@ -306,6 +317,7 @@ exercises:
     dos: [固定在门上, 面朝反方向站稳, 双手向前平推再慢慢收回]
     donts: [别耸肩, 别猛地推出去, 别憋气]
     gif: /static/gif/chest-press.gif
+    gif_source: "https://www.youtube.com/shorts/T0UJ0W-_yIE  1-4s"
     video: https://www.youtube.com/shorts/T0UJ0W-_yIE
     self_check:
       - {where: 胸和手臂, symptom: 发酸, verdict: ok}
@@ -327,6 +339,7 @@ exercises:
     dos: [固定在高处, 双手握住带子两端, 手肘往下往后拉到胸前]
     donts: [别用身体后仰借力, 别耸肩, 别拉得太快没有控制]
     gif: /static/gif/lat-pulldown.gif
+    gif_source: "https://www.youtube.com/shorts/RMqMUiHW5eQ  1-4s"
     video: https://www.youtube.com/shorts/RMqMUiHW5eQ
     self_check:
       - {where: 后背, symptom: 发酸, verdict: ok}
@@ -348,6 +361,7 @@ exercises:
     dos: [弹力带固定在身体侧面, 双手抱住带子放在胸前, 慢慢往前推出再收回、身体不转动]
     donts: [别让身体被弹力带拉歪, 别塌腰, 别憋气]
     gif: /static/gif/pallof-press.gif
+    gif_source: "https://www.youtube.com/shorts/99evyH71IWs  3-7s"
     video: https://www.youtube.com/watch?v=y1fOBVtANdM
     self_check:
       - {where: 腹部核心, symptom: 发酸发紧, verdict: ok}
@@ -393,6 +407,7 @@ exercises:
     dos: [双手拉直弹力带在胸前, 双手慢慢往两侧拉开, 挤压肩胛骨停顿一秒再放松]
     donts: [别耸肩, 别拉得太猛, 别弓背]
     gif: /static/gif/pull-apart.gif
+    gif_source: "https://www.youtube.com/watch?v=stwYTTPXubo  26-29s"
     video: https://www.youtube.com/watch?v=stwYTTPXubo
     self_check:
       - {where: 后肩和上背, symptom: 发酸, verdict: ok}
@@ -435,6 +450,7 @@ exercises:
     dos: [弹力带踩在脚下, 双手在头后握带、手肘朝上固定, 只伸直前臂把带子往上顶再慢慢弯回]
     donts: [别让手肘外张乱晃, 别耸肩, 别用腰去带]
     gif: /static/gif/triceps-extension.gif
+    gif_source: "https://www.youtube.com/shorts/WtM2MgYh6lM  1-3s"
     video: https://www.youtube.com/shorts/WtM2MgYh6lM
     self_check:
       - {where: 手臂后侧, symptom: 发酸, verdict: ok}
@@ -456,6 +472,7 @@ exercises:
     dos: [踩住弹力带, 弹力带绕过后颈或肩上, 屁股向后坐、上身前倾到与地面接近平行再站起]
     donts: [别弓背弯腰, 别蹲得太深, 膝盖别锁死也别过度弯曲]
     gif: /static/gif/good-morning.gif
+    gif_source: "https://www.youtube.com/shorts/eYyZ4rPrUUo  1-3s"
     self_check:
       - {where: 屁股和大腿后侧, symptom: 有拉伸感或发酸, verdict: ok}
       - {where: 下背, symptom: 酸胀, verdict: check}
@@ -501,6 +518,7 @@ exercises:
     dos: [双手抱壶铃贴于胸前, 一只脚踩稳、另一只脚抬起前伸, 用单腿慢慢站起再坐下]
     donts: [膝盖别内扣, 别猛地弹起来, 坐下时别一下砸到椅子上]
     gif: /static/gif/kb-sit-to-stand.gif
+    gif_source: "https://www.youtube.com/watch?v=JWz6J6ueuRw  23-26s"
     video: https://www.youtube.com/watch?v=JWz6J6ueuRw
     self_check:
       - {where: 大腿和屁股, symptom: 发酸, verdict: ok}
@@ -523,6 +541,7 @@ exercises:
     dos: [双手提壶铃站直, 膝盖微屈、髋部向后推, 上身前倾到有拉伸感再用臀腿站起]
     donts: [别弓背弯腰, 膝盖别过度弯曲变成深蹲, 别弯到腰疼的幅度]
     gif: /static/gif/rdl.gif
+    gif_source: "https://www.youtube.com/watch?v=aYZDE2t7Rrs  3-7s"
     video: https://www.youtube.com/watch?v=V6XTfsdX_V8
     advanced_name: 进阶 · 单腿罗马尼亚硬拉
     advanced_intro: 双腿做熟之后，可以挑战单腿版——单脚站立、另一条腿向后伸直，只用一条腿做髋铰链，更练平衡和单侧的臀腿力量。什么时候可以升级：双腿硬拉能连做两组、全程腰不酸不疼、动作稳，并且能不扶东西单脚站稳 10 秒以上，就可以从很轻的重量开始试单腿。
@@ -549,6 +568,7 @@ exercises:
     dos: [选一个矮而稳固的台阶或箱子, 抱稳壶铃贴于胸前, 全脚掌踩稳后站直、再慢慢下来]
     donts: [别用后脚蹬地借力, 台阶别选太高, 下台阶时别猛地砸下去]
     gif: /static/gif/step-up.gif
+    gif_source: "https://www.youtube.com/shorts/Pmqbi8-y6uc  0-4s"
     self_check:
       - {where: 大腿和屁股, symptom: 发酸, verdict: ok}
       - {where: 膝盖, symptom: 疼痛, verdict: stop}
@@ -570,6 +590,7 @@ exercises:
     dos: [双手握住壶铃把手, 髋部后坐再快速前顶发力, 用臀把壶铃荡到胸前高度]
     donts: [别用手臂去抬壶铃, 别弓腰用腰甩, 别荡过头顶]
     gif: /static/gif/swing.gif
+    gif_source: "https://www.youtube.com/shorts/TIy6s4O2bOY  4-6s"
     video: https://www.bilibili.com/video/BV1TKE96CETW/
     self_check:
       - {where: 臀和大腿后侧, symptom: 发酸, verdict: ok}
@@ -592,6 +613,7 @@ exercises:
     dos: [双手抱稳壶铃倒扣, 贴近头部慢慢绕圈, 核心收紧保持身体稳定]
     donts: [别把壶铃甩得离头太远, 别耸肩, 有肩痛就跳过这个动作]
     gif: /static/gif/halo.gif
+    gif_source: "https://www.youtube.com/shorts/rc0Kh9tImtA  5-10s"
     video: https://www.bilibili.com/video/BV13EqgBrEhR/
     self_check:
       - {where: 肩膀, symptom: 活动开的感觉, verdict: ok}
@@ -613,6 +635,7 @@ exercises:
     dos: [站稳双脚与肩同宽, 核心收紧腰背挺直, 绕腰传递壶铃到另一只手接住]
     donts: [别弓腰或后仰去够壶铃, 别让壶铃掉落砸到脚, 别憋气]
     gif: /static/gif/around-the-world.gif
+    gif_source: "https://www.youtube.com/shorts/ybk19ADjH8A  0-3s"
     self_check:
       - {where: 核心和手臂, symptom: 发酸, verdict: ok}
       - {where: 腰, symptom: 疼, verdict: check}
