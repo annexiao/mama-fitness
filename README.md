@@ -2,15 +2,21 @@
 
 **简体中文** | [English](README.en.md)
 
+![精选](https://img.shields.io/badge/%E7%B2%BE%E9%80%89-Superlinear%20Academy-7b2525?style=flat-square&labelColor=eee0cc) ![线上示例](https://img.shields.io/badge/%E7%BA%BF%E4%B8%8A%E7%A4%BA%E4%BE%8B-mama.annxiao.com-607456?style=flat-square&labelColor=eee0cc) ![开源许可](https://img.shields.io/badge/%E5%BC%80%E6%BA%90%E8%AE%B8%E5%8F%AF-MIT-ba6a4c?style=flat-square&labelColor=eee0cc) ![献给](https://img.shields.io/badge/%E7%8C%AE%E7%BB%99-%E7%88%B8%E5%A6%88-7b2525?style=flat-square&labelColor=eee0cc)
+
 一个温暖、移动端优先的**健身教育小站**，是给爸妈（或任何你想照顾的人）的一份礼物。
 
 **线上示例**：[mama.annxiao.com](https://mama.annxiao.com)（作者给自己妈妈做的版本，可以先看看成品长什么样）。
 
-> 👀 **社区精选**：被 [Superlinear Academy](https://www.superlinear.academy) 每周精选选为「一个亮眼的项目」(2026-07)。<br>
-> <sub>社区评价：「一个完整的思路参考，从需求拆解、内容筛选，到文案设计，非常详尽，值得一看。」</sub>
+> 👀 **社区精选** ｜ 被 [Superlinear Academy](https://www.superlinear.academy) 每周精选选为「一个亮眼的项目」(2026-07)。他们在原文里的三处评价：
+>
+> - 「一个完整的思路参考，从需求拆解、内容筛选、到文案设计，再到怎么说服对方开始用，非常详尽。」
+> - 「非常特别的是她的文案设计，专门为父母调整了语气，每一页最前面特别用心地解释了『为什么要做这个锻炼』。」
+> - 「这个项目非常接地气，也验证了不仅是工作，我们的生活日常也在被 AI 改变，包括我们表达关心的方式。」
 
 ## 🎯 这是给你的 coding agent 读的
 
+> [!NOTE]
 > **这是一个 agent-first 的 repo。** 把整个 repo 交给你的 coding agent（Claude Code / Cursor 等），告诉它：
 >
 > 「照着 README 和 docs 文件夹的文档，帮我改成我自己的版本」

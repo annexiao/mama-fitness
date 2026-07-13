@@ -2,15 +2,21 @@
 
 [简体中文](README.md) | **English**
 
+![Featured](https://img.shields.io/badge/Featured-Superlinear%20Academy-7b2525?style=flat-square&labelColor=eee0cc) ![Live Demo](https://img.shields.io/badge/Live%20Demo-mama.annxiao.com-607456?style=flat-square&labelColor=eee0cc) ![License](https://img.shields.io/badge/License-MIT-ba6a4c?style=flat-square&labelColor=eee0cc) ![Made for](https://img.shields.io/badge/Made%20for-parents-7b2525?style=flat-square&labelColor=eee0cc)
+
 A warm, mobile-first **fitness education site**: a gift for your parents (or anyone you want to care for).
 
 **Live example**: [mama.annxiao.com](https://mama.annxiao.com) (the author's version for her own mom, so you can see what it looks like).
 
-> 👀 **Featured**: selected as a standout project in [Superlinear Academy](https://www.superlinear.academy)'s weekly community roundup (Jul 2026).<br>
-> <sub>Community's take: "A complete reference for the whole approach, from scoping the need, to curating content, to the copywriting. Thorough, and worth a read."</sub>
+> 👀 **Featured** ｜ selected as a standout project in [Superlinear Academy](https://www.superlinear.academy)'s weekly community roundup (Jul 2026). Three separate notes from their write-up:
+>
+> - "A complete, thorough reference for the whole process: from breaking down the need, to curating content, to the wording, to how to get someone to actually start using it."
+> - "What's really special is the writing: the tone is tuned for parents, and every page opens by explaining why this exercise matters."
+> - "The project is refreshingly down-to-earth, and it shows that AI is reshaping not just work but everyday life, including the way we express care to loved ones."
 
 ## 🎯 This README is for your coding agent
 
+> [!NOTE]
 > **This is an agent-first repo.** Hand the entire repository to your coding agent (Claude Code / Cursor, etc.) and tell it:
 >
 > "Follow the README and the docs folder to help me customize this into my own version."
