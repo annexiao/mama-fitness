@@ -8,7 +8,7 @@
 
 **线上示例**：[mama.annxiao.com](https://mama.annxiao.com)（作者给自己妈妈做的版本，可以先看看成品长什么样）。
 
-> 👀 **社区精选** ｜ 被 [Superlinear Academy](https://www.superlinear.academy) 每周精选选为「一个亮眼的项目」(2026-07)。他们在原文里的三处评价：
+> 👀 **社区精选** ｜ 被 [Superlinear Academy](https://www.superlinear.academy/c/start-here/20260713) 每周精选选为「一个亮眼的项目」(2026-07)。他们在原文里的三处评价：
 >
 > - 「一个完整的思路参考，从需求拆解、内容筛选、到文案设计，再到怎么说服对方开始用，非常详尽。」
 > - 「非常特别的是她的文案设计，专门为父母调整了语气，每一页最前面特别用心地解释了『为什么要做这个锻炼』。」

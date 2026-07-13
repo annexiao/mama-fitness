@@ -8,7 +8,7 @@ A warm, mobile-first **fitness education site**: a gift for your parents (or any
 
 **Live example**: [mama.annxiao.com](https://mama.annxiao.com) (the author's version for her own mom, so you can see what it looks like).
 
-> 👀 **Featured** ｜ selected as a standout project in [Superlinear Academy](https://www.superlinear.academy)'s weekly community roundup (Jul 2026). Three separate notes from their write-up:
+> 👀 **Featured** ｜ selected as a standout project in [Superlinear Academy](https://www.superlinear.academy/c/start-here/20260713)'s weekly community roundup (Jul 2026). Three separate notes from their write-up:
 >
 > - "A complete, thorough reference for the whole process: from breaking down the need, to curating content, to the wording, to how to get someone to actually start using it."
 > - "What's really special is the writing: the tone is tuned for parents, and every page opens by explaining why this exercise matters."
