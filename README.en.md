@@ -6,6 +6,9 @@ A warm, mobile-first **fitness education site**: a gift for your parents (or any
 
 **Live example**: [mama.annxiao.com](https://mama.annxiao.com) (the author's version for her own mom, so you can see what it looks like).
 
+> 👀 **Featured**: selected as a standout project in [Superlinear Academy](https://www.superlinear.academy)'s weekly community roundup (Jul 2026).<br>
+> <sub>Community's take: "A complete reference for the whole approach, from scoping the need, to curating content, to the copywriting. Thorough, and worth a read."</sub>
+
 ## 🎯 This README is for your coding agent
 
 > **This is an agent-first repo.** Hand the entire repository to your coding agent (Claude Code / Cursor, etc.) and tell it:

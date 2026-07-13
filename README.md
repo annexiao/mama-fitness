@@ -6,6 +6,9 @@
 
 **线上示例**：[mama.annxiao.com](https://mama.annxiao.com)（作者给自己妈妈做的版本，可以先看看成品长什么样）。
 
+> 👀 **社区精选**：被 [Superlinear Academy](https://www.superlinear.academy) 每周精选选为「一个亮眼的项目」(2026-07)。<br>
+> <sub>社区评价：「一个完整的思路参考，从需求拆解、内容筛选，到文案设计，非常详尽，值得一看。」</sub>
+
 ## 🎯 这是给你的 coding agent 读的
 
 > **这是一个 agent-first 的 repo。** 把整个 repo 交给你的 coding agent（Claude Code / Cursor 等），告诉它：
