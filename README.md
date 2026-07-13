@@ -1,10 +1,18 @@
 # 妈妈的训练 · mama-training
 
+**简体中文** | [English](README.en.md)
+
 一个温暖、移动端优先的**健身教育小站**，是给爸妈（或任何你想照顾的人）的一份礼物。
 
 **线上示例**：[mama.annxiao.com](https://mama.annxiao.com)（作者给自己妈妈做的版本，可以先看看成品长什么样）。
 
-> **这是一个 agent-first 的 repo。** 我假设你会把它交给你的 coding agent（Claude Code / Cursor 等）来读、来改，所以下面**不会写特别详细的手动命令步骤**，而是告诉你的 agent 去改哪些文件、看哪些文档。把 repo 交给它，说一句「照着 README 帮我改成我自己的版本」就行。
+## 🎯 这是给你的 coding agent 读的
+
+> **这是一个 agent-first 的 repo。** 把整个 repo 交给你的 coding agent（Claude Code / Cursor 等），告诉它：
+>
+> 「照着 README 和 docs 文件夹的文档，帮我改成我自己的版本」
+>
+> agent 会根据下面的文件索引改数据、生成 GIF 和图片。你不用手写命令，也不用逐行读代码。
 
 ## What's New
 
